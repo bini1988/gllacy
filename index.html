@@ -68,7 +68,7 @@
               <tbody>
                 <tr class="page-header__basket-item">
                   <td>
-                    <button class="page-header__item-remove">x</button>
+                    <button class="btn  page-header__item-remove-btn">x</button>
                   </td>
                   <td>
                     <p class="page-header__item-desc">Пломбир с апельсиновым джемом</p>
@@ -83,7 +83,7 @@
                 </tr>
                 <tr class="page-header__basket-item">
                   <td>
-                    <button class="page-header__item-remove">x</button>
+                    <button class="btn  page-header__item-remove-btn">x</button>
                   </td>
                   <td>
                     <p class="page-header__item-desc">Клубничный пломбир с присыпкой из белого шоколада</p>
@@ -105,7 +105,7 @@
                 </tr>
               </tfoot>
             </table>
-            <input class="btn  page-header__basket-btn" type="submit" value="Оформить заказ">
+            <a class="btn  page-header__basket-btn">Оформить заказ</a>
           </form>
         </div>
       </div>
@@ -140,23 +140,63 @@
           <a href="#" class="btn  promo-slider__btn">Давайте оба!</a>
         </div>
       </div>
-      <section class="promo-cards">
-        <div class="promo-cards__item">
-          <h2 class="promo-cards__title">Малинка даром!</h2>
-          <p class="promo-cards__content">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a href="/" class="btn  promo-cards__link">Хочу варенье!</a>
+      <section class="promo-cards clearfix">
+        <div class="promo-cards__item  promo-cards__item--razz  promo-cards__item--left">
+          <div class="promo-cards__item-wrap">
+            <h2>Малинка даром!</h2>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a href="/" class="btn  promo-cards__btn">Хочу варенье!</a>
+          </div>
         </div>
-        <div class="promo-cards__item">
-          <h2 class="promo-cards__title">Шоколадки даром!</h2>
-          <p class="promo-cards__content">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a href="/" class="btn  promo-cards__link">Хочу шоколадки!</a>
+        <div class="promo-cards__item  promo-cards__item--chocolate  promo-cards__item--right">
+          <div class="promo-cards__item-wrap">
+            <h2>Шоколадки даром!</h2>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a href="/" class="btn  promo-cards__btn">Хочу шоколадки!</a>
+          </div>
         </div>
       </section>
       <section class="promo-hits">
-        <div class="promo-hits__item"></div>
-        <div class="promo-hits__item"></div>
-        <div class="promo-hits__item"></div>
-        <div class="promo-hits__item"></div>
+        <div class="promo-hits__item  promo-hits__item--hit">
+          <div class="promo-hits__img-wrap">
+            <img src="/" alt="Мороженое">
+          </div>
+          <div class="promo-hits__price">
+            <span class="promo-hits__cost">310 ք</span>
+            <span class="promo-hits__amount">/кг</span>
+            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          </div>
+        </div>
+        <div class="promo-hits__item  promo-hits__item--hit">
+          <div class="promo-hits__img-wrap">
+            <img src="/" alt="Мороженое">
+          </div>
+          <div class="promo-hits__price">
+            <span class="promo-hits__cost">380 ք</span>
+            <span class="promo-hits__amount">/кг</span>
+            <p>Сливочно-кофейное с кусочками шоколада</p>
+          </div>
+        </div>
+        <div class="promo-hits__item  promo-hits__item--hit">
+          <div class="promo-hits__img-wrap">
+            <img src="/" alt="Мороженое">
+          </div>
+          <div class="promo-hits__price">
+            <span class="promo-hits__cost">355 ք</span>
+            <span class="promo-hits__amount">/кг</span>
+            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+          </div>
+        </div>
+        <div class="promo-hits__item  promo-hits__item--hit">
+          <div class="promo-hits__img-wrap">
+            <img src="/" alt="Мороженое">
+          </div>
+          <div class="promo-hits__price">
+            <span class="promo-hits__cost">415 ք</span>
+            <span class="promo-hits__amount">/кг</span>
+            <p>Сливочное крем-брюле с карамельной подливкой</p>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
