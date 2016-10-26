@@ -16,7 +16,7 @@
       <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a href="/" class="main-nav__link">Каталог</a>
+            <a href="/catalog.html" class="main-nav__link">Каталог</a>
             <ul class="main-nav__popup">
               <li class="main-nav__popup-item">
                 <a href="/" class="main-nav__popup-header">Новинки</a>
@@ -162,44 +162,58 @@
       </section>
       <section class="promo-hits">
         <h2 class="visually-hidden">Наши предложения</h2>
-        <div class="promo-hits__item  promo-hits__item--hit">
-          <div class="promo-hits__img-wrap">
-            <img src="/" alt="Мороженое">
+        <div class="promo-hits__items">
+          <div class="product-item  product-item--hit">
+            <div class="product-item__img-wrap">
+              <img class="product-item__img" src="/" alt="Мороженое">
+            </div>
+            <div class="product-item__price">
+              <span class="product-item__cost">310 ք</span>
+              <span class="product-item__amount">/кг</span>
+            </div>
+            <p class="product-item__desc">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
+              <button class="btn  product-item__btn">Быстрый просмотр</button>
+            </div>
           </div>
-          <div class="promo-hits__price">
-            <span class="promo-hits__cost">310 ք</span>
-            <span class="promo-hits__amount">/кг</span>
-            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <div class="promo-hits__item  product-item--hit">
+            <div class="product-item__img-wrap">
+              <img class="product-item__img" src="/" alt="Мороженое">
+            </div>
+            <div class="product-item__price">
+              <span class="product-item__cost">380 ք</span>
+              <span class="product-item__amount">/кг</span>
+            </div>
+            <p class="product-item__desc">Сливочно-кофейное с кусочками шоколада</p>
+            <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
+              <button class="btn  product-item__btn">Быстрый просмотр</button>
+            </div>
           </div>
-        </div>
-        <div class="promo-hits__item  promo-hits__item--hit">
-          <div class="promo-hits__img-wrap">
-            <img src="/" alt="Мороженое">
+          <div class="promo-hits__item  product-item--hit">
+            <div class="product-item__img-wrap">
+              <img class="product-item__img" src="/" alt="Мороженое">
+            </div>
+            <div class="product-item__price">
+              <span class="product-item__cost">355 ք</span>
+              <span class="product-item__amount">/кг</span>
+            </div>
+            <p class="product-item__desc">Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
+              <button class="btn  product-item__btn">Быстрый просмотр</button>
+            </div>
           </div>
-          <div class="promo-hits__price">
-            <span class="promo-hits__cost">380 ք</span>
-            <span class="promo-hits__amount">/кг</span>
-            <p>Сливочно-кофейное с кусочками шоколада</p>
-          </div>
-        </div>
-        <div class="promo-hits__item  promo-hits__item--hit">
-          <div class="promo-hits__img-wrap">
-            <img src="/" alt="Мороженое">
-          </div>
-          <div class="promo-hits__price">
-            <span class="promo-hits__cost">355 ք</span>
-            <span class="promo-hits__amount">/кг</span>
-            <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-          </div>
-        </div>
-        <div class="promo-hits__item  promo-hits__item--hit">
-          <div class="promo-hits__img-wrap">
-            <img src="/" alt="Мороженое">
-          </div>
-          <div class="promo-hits__price">
-            <span class="promo-hits__cost">415 ք</span>
-            <span class="promo-hits__amount">/кг</span>
-            <p>Сливочное крем-брюле с карамельной подливкой</p>
+          <div class="promo-hits__item  product-item--hit">
+            <div class="product-item__img-wrap">
+              <img class="product-item__img" src="/" alt="Мороженое">
+            </div>
+            <div class="product-item__price">
+              <span class="product-item__cost">415 ք</span>
+              <span class="product-item__amount">/кг</span>
+            </div>
+            <p class="product-item__desc">Сливочное крем-брюле с карамельной подливкой</p>
+            <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
+              <button class="btn  product-item__btn">Быстрый просмотр</button>
+            </div>
           </div>
         </div>
       </section>
@@ -242,12 +256,14 @@
         <h2 class="visually-hidden">Контакты</h2>
         <img class="contacts__map" src="/" alt="Ма на карте">
         <div class="contacts__address">
-          <p>Адрес главного офиса и офлайн магазина:<br>
+          <p>Адрес главного офиса и офлайн магазина:
+            <br>
             <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
           </p>
-          <p>Для заказов по телефону:<br>
-            <b>8 812 450-25-25</b><br>
-            (с 10 до 20 ежедневно)
+          <p>Для заказов по телефону:
+            <br>
+            <b>8 812 450-25-25</b>
+            <br> (с 10 до 20 ежедневно)
           </p>
           <a class="btn  contacts__address-btn" href="/">Форма обратной связи</a>
         </div>
