@@ -1,0 +1,115 @@
+@font-face{font-family:"Roboto";src:local("Roboto Regular"),local("Roboto-Regular"),url(../fonts/roboto.woff) format("woff"),url(../fonts/roboto.woff2) format("woff2");font-weight:400;font-style:normal}@font-face{font-family:"Roboto";src:local("Roboto Medium"),local("Roboto-Medium"),url(../fonts/robotomedium.woff) format("woff"),url(../fonts/robotomedium.woff2) format("woff2");font-weight:700;font-style:normal}body,html,input[type=email],input[type=password],input[type=text]{font-family:"Roboto","Arial",sans-serif;font-style:normal;font-weight:400}body,html{color:#fff;background-color:#849d8f;margin:0;padding:0;font-size:18px;line-height:22px}input[type=email],input[type=password],input[type=text]{display:inline-block;vertical-align:top;box-sizing:border-box;padding:9px 15px;margin:0 0 20px;min-width:239px;font-size:14px;line-height:24px;border:1px solid #d3d3d2;border-radius:5px}.page-wrapper{min-width:900px;max-width:1200px;margin:0 auto}.overlay{display:none;position:fixed;top:0;left:0;height:100%;width:100%;background:rgba(0,0,0,.5);z-index:250}.overlay--show{display:block}.hidden,.overlay--hide{display:none}.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;clip:rect(0 0 0 0);overflow:hidden}.btn{display:inline-block;padding:11px 20px;font-family:"Roboto","Arial",sans-serif;font-weight:700;font-size:18px;line-height:24px;text-align:center;text-transform:none;text-decoration:none;white-space:normal;background-color:#f06542;background:linear-gradient(to top,#e74a35,#f26843);color:#fff;box-shadow:none;border:none;border-radius:23px;cursor:pointer;outline:none}
+/*!
+  * ===========================================================
+  * LOGIN FORM
+  * ===========================================================
+  */
+.login-form{display:block;padding:20px 19px;width:239px;font-size:0;background-color:#f8f7f4;border-radius:5px}.login-form__link-items{display:inline-block;vertical-align:top;margin-left:15px;width:123px;line-height:0}.login-form__link-item{display:inline-block;font-size:13px;line-height:24px;color:#323232}
+/*!
+  * ===========================================================
+  * BASKET TABLE
+  * ===========================================================
+  */
+.basket-table{margin:0;padding:0;border:none}.basket-table__btn{display:inline-block;width:14px;height:14px;font-size:0;box-shadow:none;border:none;cursor:pointer;outline:none;background-color:transparent;background-repeat:no-repeat;background-position:50% 50%}.basket-table__btn--remove{background-image:url(../../img/cross.svg)}.basket-table__item td{vertical-align:middle}.basket-table__item--total{text-align:right}.basket-table__item--total td{padding:0;text-align:right}.basket-table__col-control{padding:14px 15px;font-size:0}.basket-table__col-preview{padding:14px 0}.basket-table__col-label{padding:14px 15px;width:225px}.basket-table__col-price,.basket-table__col-sum{padding:14px 15px}.basket-table__price{color:#999}.basket-table__total{display:block;padding:14px 0;font-size:15px;line-height:18px;font-style:normal;font-weight:700;border-top:1px solid #cacac7}
+/*!
+  * ===========================================================
+  * PAGE HEADER
+  * ===========================================================
+  */
+.page-header{display:flex;justify-content:flex-start;flex-wrap:wrap;position:relative;margin:0;padding:0 27px;min-height:80px}.page-header__logo{display:block;margin:10px 20px 0 0}.page-header__search{display:block;margin-left:auto}.page-header__search-label{display:block;width:34px;height:34px;margin-top:22px;font-size:0;background-color:rgba(255,255,255,.2);background-image:url(../../img/search-icon.png);background-repeat:no-repeat;background-position:50% 50%;border-radius:17px;cursor:pointer}.page-header__search-form{display:none;padding:20px 15px;background-color:#f8f7f4;border-radius:5px}.page-header__search-form input{margin:0;min-width:311px}.page-header__user{display:block;margin-top:23px;font-size:0}.page-header__user-login{display:inline-block;vertical-align:top}.page-header__user-login .login-form{display:none;z-index:100}.page-header__label{display:inline-block;margin-left:8px;padding:8px 15px 8px 45px;font-size:14px;line-height:16px;font-weight:700;background-color:rgba(255,255,255,.2);background-repeat:no-repeat;background-position:15px 50%;border-radius:17px;cursor:pointer}.page-header__label--login{background-image:url(../../img/enter-icon.png)}.page-header__label--basket{background-image:url(../../img/basket-icon.png)}.page-header__label--basket-full{color:#323232;background-color:#f7f6f3;background-image:url(../../img/basket-full-icon.png)}.page-header__user-basket{display:inline-block;vertical-align:top}.page-header__basket-popup{display:none;padding:20px 15px;font-size:13px;line-height:16px;font-weight:400;color:#323232;background-color:#f8f7f4;border-radius:5px;z-index:100}.page-header__contacts{display:block;position:absolute;top:80px;right:27px;text-align:right}.page-header__contacts-days{margin-bottom:5px;font-size:14px;line-height:16px;font-weight:700}.page-header__contacts-tel{font-size:22px;line-height:24px;font-weight:700}
+/*!
+  * ===========================================================
+  * MAIN NAVIGATION
+  * ===========================================================
+  */
+.main-nav{display:flex;flex-wrap:wrap;max-width:700px;margin-top:23px;font-size:16px;line-height:18px;font-weight:700}.main-nav__items{margin:0;padding:0;list-style-type:none}.main-nav__item{display:inline-block;position:relative}.main-nav__link{display:inline-block;padding:7px 15px;text-decoration:none;color:#fff;cursor:pointer}.main-nav__link--active,.main-nav__link:hover{border:none;background-color:#d07058;border-radius:16px;color:#fff}.main-nav__link:hover{background-color:#f7f6f3;color:#323232}.main-nav__link:hover+.main-nav__popup,.main-nav__popup:hover{display:block}.main-nav__popup{display:none;position:absolute;margin:0;padding:0;top:32px;min-width:143px;list-style-type:none;background-color:#f8f7f4;border-radius:5px;overflow:hidden;z-index:100}.main-nav__popup-link{display:block;padding:6px 20px;font-family:"Roboto","Arial",sans-serif;font-weight:400;font-size:14px;line-height:16px;text-decoration:none;color:#000}.main-nav__popup-link--title{padding:11px 20px;font-weight:700}.main-nav__popup-link:hover{background-color:#fbded8}
+/*!
+  * ===========================================================
+  * PAGE CONTENT
+  * ===========================================================
+  */
+.page-content{max-width:1200px;margin:0 auto;padding:0}
+/*!
+  * ===========================================================
+  * BREADCRUMBS
+  * ===========================================================
+  */
+.breadcrumbs{margin:5px 250px 5px 27px;font-size:14px;line-height:16px;font-weight:400}.breadcrumbs__items{margin:0;padding:0;list-style-type:none}.breadcrumbs__item{display:inline-block}.breadcrumbs__item:nth-child(n+2)::before{content:"»"}.breadcrumbs__link{color:#fff}
+/*!
+  * ===========================================================
+  * CATALOG
+  * ===========================================================
+  */
+.catalog{margin:0 27px;padding:30px 0;text-align:right;border-bottom:1px solid #a9bbb1}.catalog__header{font-size:35px;line-height:41px;font-weight:700;text-align:left}.catalog__filter{margin-bottom:20px}.catalog__list{padding:10px 0}.catalog__list h3{display:block;width:100%}.catalog__list-items{display:flex;flex-wrap:wrap}
+/*!
+  * ===========================================================
+  * PROMO SLIDER
+  * ===========================================================
+  */
+.promo-slider__item{display:none;position:relative}.promo-slider__item a,.promo-slider__item h2{position:absolute;left:50%;font-weight:700;transform:translateX(-50%)}.promo-slider__item h2{margin:0;width:700px;height:140px;text-align:center;display:block;bottom:140px;font-size:60px;line-height:60.35px}.promo-slider__item img{display:block;margin:0 auto;z-index:80}.promo-slider__item a{display:inline-block;bottom:60px;padding:9px 40px;font-size:32px;line-height:44px;border-radius:31px}.promo-slider__item:first-child{display:block}
+/*!
+  * ===========================================================
+  * PROMO CARDS
+  * ===========================================================
+  */
+.promo-cards{display:flex;flex-wrap:wrap;margin-top:-20px;padding:0 27px}.promo-cards h2{display:block;width:100%}.promo-cards__item{margin:0 0 20px;padding:20px;width:520px;z-index:100;background-color:#849d8f;background-repeat:no-repeat;background-position:50% 50%;border-radius:15px}.promo-cards__item--razz{background-image:url(../../img/razz-background.jpg)}.promo-cards__item--chocolate{background-image:url(../../img/chocolate-background.jpg)}.promo-cards__item:nth-child(odd){margin-left:auto}.promo-cards__item-content{text-align:right}.promo-cards__item-content h3,.promo-cards__item-content p{margin-top:0;margin-bottom:10px;font-size:35px;line-height:41px;font-weight:700;text-align:left}.promo-cards__item-content p{margin-top:20px;margin-bottom:38px;font-size:18px;line-height:22px}
+/*!
+  * ===========================================================
+  * PROMO HITS
+  * ===========================================================
+  */
+.promo-hits{padding:0 27px}.promo-hits h2{display:block;width:100%}.promo-hits__items{display:flex;flex-wrap:wrap}
+/*!
+  * ===========================================================
+  * FILTER FORM
+  * ===========================================================
+  */
+.filter-form{display:flex;flex-wrap:wrap;align-items:center;font-size:0}.filter-form__item{position:relative;margin:30px 7px 0;padding:8px;font-size:16px;line-height:18px;font-weight:400;border:none;background-color:rgba(225,255,255,.2);border-radius:17px}.filter-form__title{position:absolute;top:-25px;left:20px;margin:0;padding:0;font-size:14px;line-height:16px;font-weight:700}.filter-form__fatcontent{margin:0;padding:0;list-style-type:none}.filter-form__fatcontent-item{display:inline-block}.filter-form__fillers{margin:0;padding:0;list-style-type:none}.filter-form__fillers-item{display:inline-block}.filter-form__price-range{display:flex;align-items:center}.filter-form__price-range input[type=text]{margin:0 10px;padding:0 10px;min-width:50px;width:50px;border:none}.filter-form__btn{display:inline-block;align-self:flex-end;padding:7px 30px;font-weight:400;font-size:16px;line-height:18px;text-align:center;text-transform:none;text-decoration:none;white-space:normal;background-color:rgba(255,255,255,.19);color:#fff;box-shadow:none;border:2px solid #fff;border-radius:18px;cursor:pointer;outline:none}
+/*!
+  * ===========================================================
+  * PRODUCT ITEM
+  * ===========================================================
+  */
+.product-item{position:relative;width:267px}.product-item--hit::before{content:"";display:block;position:absolute;top:0;left:0;width:61px;height:61px;background-color:transparent;background-image:url(../../img/hit-mark.png);background-repeat:no-repeat;background-position:50% 50%}.product-item:not(:nth-child(4n)){margin-right:26px}.product-item__img-wrap{width:266px;height:266px;border-radius:133px;overflow:hidden}.product-item__price{position:absolute;top:200px;left:0}.product-item__amount,.product-item__cost{font-size:45px;line-height:45px;font-weight:700}.product-item__amount{font-size:30px}.product-item__desc{font-size:16px;line-height:22px;font-weight:400;text-align:center}.product-item__hover-wrap,.product-item__hover-wrap--hidden{display:none}
+/*!
+  * ===========================================================
+  * ABOUT SHOP
+  * ===========================================================
+  */
+.about-shop{margin:20px 27px;padding:30px 20px;color:#323232;background-color:#eee0c4;background-image:url(../../img/wafer-bg-pattern.jpg);background-position:15px 50%;border-radius:17px}.about-shop h2{margin-top:0;font-size:24px;line-height:30px;font-weight:700}.about-shop__items{margin:0;padding:0 10px;-moz-column-count:2;column-count:2;-moz-column-gap:5px;column-gap:5px;list-style-type:none}.about-shop__item{position:relative;padding:10px 10px 30px 60px;font-size:16px;line-height:22px;font-weight:400}.about-shop__item::before{content:"";display:block;position:absolute;width:49px;height:49px;top:0;left:0;background-color:transparent;background-position:50% 50%;border-radius:17px}.about-shop__item--icecream::before{background-image:url(../../img/ice-cream-icon.png)}.about-shop__item--leaf::before{background-image:url(../../img/leaf-icon.png)}.about-shop__item--cow::before{background-image:url(../../img/cow-icon.png)}.about-shop__item--temp::before{background-image:url(../../img/temp-icon.png)}
+/*!
+  * ===========================================================
+  * NOTES
+  * ===========================================================
+  */
+.notes{display:flex;flex-wrap:wrap;padding:20px 27px}.notes h2{display:block;width:100%}.notes__note-item{margin:0 0 20px;padding:20px;width:520px;min-height:180px;color:#323232;background-color:#f8f7f4;background-repeat:no-repeat;background-position:50% 50%;border-radius:15px;z-index:100}.notes__note-item--blog{background-image:url(../../img/ice-cream-background.jpg)}.notes__note-item--subscribe{padding:5px;width:550px;background-repeat:repeat;background-position:0 0;background-image:url(../../img/letter-bg-pattern.png)}.notes__note-item:nth-child(odd){margin-left:auto}.notes__note-title{margin-top:0;font-size:16px;line-height:22px;font-weight:700}.notes__note-link{font-size:24px;line-height:30px;font-weight:700;color:#323232}.notes__item-wrap{padding:30px 20px;min-height:150px;background-color:#f8f7f4;border-radius:15px}
+/*!
+  * ===========================================================
+  * SUBSCRIBE FORM
+  * ===========================================================
+  */
+.subscribe-form{font-size:0;text-align:right}.subscribe-form input[type=email]{margin-bottom:0;margin-right:10px;width:358px}.subscribe-form input[type=submit]{padding:10px 20px;font-size:18px;line-height:24px;font-weight:700}.subscribe-form__label{margin-bottom:35px;color:#5a5a5a;font-size:16px;line-height:22px;font-weight:400;text-align:left}
+/*!
+  * ===========================================================
+  * CONTACTS
+  * ===========================================================
+  */
+.contacts{position:relative;height:430px}.contacts img{max-width:100%;height:auto}.contacts__address{position:absolute;top:62px;right:27px;padding:30px 25px;width:252px;color:#323232;background-color:#fffffe;border-radius:15px;text-align:center}.contacts__address p{margin-top:0;font-size:14px;line-height:20px;font-weight:400;text-align:left}.contacts__address strong{font-size:18px;line-height:22px;font-weight:700}
+/*!
+  * ===========================================================
+  * PAGE FOOTER
+  * ===========================================================
+  */
+.page-footer{display:flex;flex-wrap:wrap;align-items:center;padding:15px 27px;font-size:13px;line-height:18px;font-weight:400}.page-footer__nav{margin:0 auto}.page-footer__nav-items{margin:0;padding:0;width:390px;-moz-column-count:2;column-count:2;-moz-column-gap:5px;column-gap:5px;list-style-type:none}.page-footer__nav-item{position:relative;padding-left:20px}.page-footer__nav-item--like{font-weight:700}.page-footer__nav-item--like::before{content:"";display:block;position:absolute;top:3px;left:0;width:15px;height:13px;background-color:transparent;background-image:url(../../img/heart-icon.png);background-repeat:no-repeat;background-position:50% 50%}.page-footer__copyright-link,.page-footer__nav-link{color:#fff}
+/*!
+  * ===========================================================
+  * SOCIAL LONKS SECTION
+  * ===========================================================
+  */
+.social{font-size:0}.social__btn{position:relative;display:inline-block;margin:0 3px;width:38px;height:38px;font-size:0;background-color:transparent;background-repeat:no-repeat;background-position:50% 50%;border-radius:19px;opacity:.8}.social__btn--tw{background-image:url(../../img/twitter-icon.png)}.social__btn--inst{background-image:url(../../img/intagram-icon.png)}.social__btn--fb{background-image:url(../../img/facebook-icon.png)}.social__btn--vk{background-image:url(../../img/vk-icon.png)}
+/*!
+  * ===========================================================
+  * PAGINATOR
+  * ===========================================================
+  */
+.paginator{display:inline-block;font-size:0}.paginator__page-link{display:inline-block;padding:4px;min-width:18px;height:18px;font-size:16px;line-height:18px;font-weight:400;color:#fff;text-decoration:none;text-align:center}.paginator__page-link--active{color:#353535;background-color:#fff;border-radius:13px}

@@ -9,3 +9,4 @@ Thumbs.db
 *.pdf
 package.json
 gulpfile.js
+less/
