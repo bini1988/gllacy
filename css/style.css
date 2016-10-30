@@ -150,7 +150,7 @@ input[type=password] {
   background-position: 50% 50%;
 }
 .basket-table__btn--remove {
-  background-image: url('../../img/cross.svg');
+  background-image: url('../img/cross.svg');
 }
 .basket-table__item td {
   vertical-align: middle;
@@ -222,7 +222,7 @@ input[type=password] {
   margin-top: 22px;
   font-size: 0px;
   background-color: rgba(255, 255, 255, 0.2);
-  background-image: url('../../img/search-icon.png');
+  background-image: url('../img/search-icon.png');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-radius: 17px;
@@ -266,15 +266,15 @@ input[type=password] {
   cursor: pointer;
 }
 .page-header__label--login {
-  background-image: url('../../img/enter-icon.png');
+  background-image: url('../img/enter-icon.png');
 }
 .page-header__label--basket {
-  background-image: url('../../img/basket-icon.png');
+  background-image: url('../img/basket-icon.png');
 }
 .page-header__label--basket-full {
   color: #323232;
   background-color: #f7f6f3;
-  background-image: url('../../img/basket-full-icon.png');
+  background-image: url('../img/basket-full-icon.png');
 }
 .page-header__user-basket {
   display: inline-block;
@@ -524,10 +524,10 @@ input[type=password] {
   border-radius: 15px;
 }
 .promo-cards__item--razz {
-  background-image: url('../../img/razz-background.jpg');
+  background-image: url('../img/razz-background.jpg');
 }
 .promo-cards__item--chocolate {
-  background-image: url('../../img/chocolate-background.jpg');
+  background-image: url('../img/chocolate-background.jpg');
 }
 .promo-cards__item:nth-child(odd) {
   margin-left: auto;
@@ -664,7 +664,7 @@ input[type=password] {
   width: 61px;
   height: 61px;
   background-color: transparent;
-  background-image: url('../../img/hit-mark.png');
+  background-image: url('../img/hit-mark.png');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -714,7 +714,7 @@ input[type=password] {
   padding: 30px 20px;
   color: #323232;
   background-color: #eee0c4;
-  background-image: url('../../img/wafer-bg-pattern.jpg');
+  background-image: url('../img/wafer-bg-pattern.jpg');
   background-position: 15px 50%;
   border-radius: 17px;
 }
@@ -755,16 +755,16 @@ input[type=password] {
   border-radius: 17px;
 }
 .about-shop__item--icecream::before {
-  background-image: url('../../img/ice-cream-icon.png');
+  background-image: url('../img/ice-cream-icon.png');
 }
 .about-shop__item--leaf::before {
-  background-image: url('../../img/leaf-icon.png');
+  background-image: url('../img/leaf-icon.png');
 }
 .about-shop__item--cow::before {
-  background-image: url('../../img/cow-icon.png');
+  background-image: url('../img/cow-icon.png');
 }
 .about-shop__item--temp::before {
-  background-image: url('../../img/temp-icon.png');
+  background-image: url('../img/temp-icon.png');
 }
 /*!
   * ===========================================================
@@ -794,14 +794,14 @@ input[type=password] {
   z-index: 100;
 }
 .notes__note-item--blog {
-  background-image: url('../../img/ice-cream-background.jpg');
+  background-image: url('../img/ice-cream-background.jpg');
 }
 .notes__note-item--subscribe {
   padding: 5px;
   width: 550px;
   background-repeat: repeat;
   background-position: 0 0;
-  background-image: url('../../img/letter-bg-pattern.png');
+  background-image: url('../img/letter-bg-pattern.png');
 }
 .notes__note-item:nth-child(odd) {
   margin-left: auto;
@@ -931,7 +931,7 @@ input[type=password] {
   width: 15px;
   height: 13px;
   background-color: transparent;
-  background-image: url('../../img/heart-icon.png');
+  background-image: url('../img/heart-icon.png');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -963,16 +963,16 @@ input[type=password] {
   opacity: 0.8;
 }
 .social__btn--tw {
-  background-image: url('../../img/twitter-icon.png');
+  background-image: url('../img/twitter-icon.png');
 }
 .social__btn--inst {
-  background-image: url('../../img/intagram-icon.png');
+  background-image: url('../img/intagram-icon.png');
 }
 .social__btn--fb {
-  background-image: url('../../img/facebook-icon.png');
+  background-image: url('../img/facebook-icon.png');
 }
 .social__btn--vk {
-  background-image: url('../../img/vk-icon.png');
+  background-image: url('../img/vk-icon.png');
 }
 /*!
   * ===========================================================
