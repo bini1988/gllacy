@@ -82,7 +82,7 @@ input[type=password] {
 }
 .btn {
   display: inline-block;
-  padding: 11px 20px;
+  padding: 11px 22px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -199,48 +199,46 @@ input[type=password] {
 .page-header {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   position: relative;
-  margin: 0;
   padding: 0px 27px;
   min-height: 80px;
 }
 .page-header__logo {
   display: block;
-  margin: 10px 20px;
-  margin-left: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
+  margin-top: 5px;
+  margin-left: -5px;
+  margin-right: 20px;
 }
 .page-header__search {
   display: block;
+  position: relative;
   margin-left: auto;
-}
-.page-header__search-label {
-  display: block;
-  width: 34px;
-  height: 34px;
-  margin-top: 22px;
   font-size: 0px;
-  background-color: rgba(255, 255, 255, 0.2);
-  background-image: url('../img/search-icon.png');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border-radius: 17px;
-  cursor: pointer;
 }
 .page-header__search-form {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 36px;
+  right: 0px;
   padding: 20px 15px;
   background-color: #f8f7f4;
   border-radius: 5px;
+  visibility: hidden;
+  transition: 0.1s 0.2s;
+  z-index: 100;
+}
+.page-header__search-form:hover {
+  visibility: visible;
 }
 .page-header__search-form input {
   margin: 0px;
-  min-width: 311px;
+  min-width: 312px;
 }
 .page-header__user {
   display: block;
-  margin-top: 23px;
   font-size: 0px;
 }
 .page-header__user-login {
@@ -251,10 +249,11 @@ input[type=password] {
   display: none;
   z-index: 100;
 }
-.page-header__label {
+.page-header__btn {
   display: inline-block;
-  margin-left: 8px;
-  padding: 8px 15px;
+  vertical-align: top;
+  margin-left: 9px;
+  padding: 8px 33px;
   padding-left: 45px;
   font-size: 14px;
   line-height: 16px;
@@ -265,13 +264,32 @@ input[type=password] {
   border-radius: 17px;
   cursor: pointer;
 }
-.page-header__label--login {
+.page-header__btn:hover {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+.page-header__btn--search {
+  padding: 0px;
+  margin: 0px;
+  width: 34px;
+  height: 34px;
+  font-size: 0px;
+  background-image: url('../img/search-icon.png');
+  background-position: 50% 50%;
+}
+.page-header__btn--search:hover + .page-header__search-form {
+  visibility: visible;
+  transition-delay: 0s;
+}
+.page-header__btn--login {
+  padding: 8px 18px;
+  padding-left: 43px;
   background-image: url('../img/enter-icon.png');
 }
-.page-header__label--basket {
+.page-header__btn--basket {
   background-image: url('../img/basket-icon.png');
 }
-.page-header__label--basket-full {
+.page-header__btn--basket-full {
   color: #323232;
   background-color: #f7f6f3;
   background-image: url('../img/basket-full-icon.png');
@@ -294,7 +312,7 @@ input[type=password] {
 .page-header__contacts {
   display: block;
   position: absolute;
-  top: 80px;
+  top: 72px;
   right: 27px;
   text-align: right;
 }
@@ -318,7 +336,6 @@ input[type=password] {
   display: flex;
   flex-wrap: wrap;
   max-width: 700px;
-  margin-top: 23px;
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
@@ -331,11 +348,13 @@ input[type=password] {
 .main-nav__item {
   display: inline-block;
   position: relative;
+  margin-right: 4px;
 }
 .main-nav__link {
   display: inline-block;
-  padding: 7px 15px;
+  padding: 7px 10px;
   text-decoration: none;
+  text-align: center;
   color: #ffffff;
   cursor: pointer;
 }
@@ -352,27 +371,34 @@ input[type=password] {
   color: #323232;
 }
 .main-nav__link:hover + .main-nav__popup {
-  display: block;
+  visibility: visible;
+  transition-delay: 0s;
 }
 .main-nav__popup {
-  display: none;
+  display: block;
   position: absolute;
   margin: 0px;
   padding: 0px;
-  top: 32px;
+  top: 36px;
+  left: -5px;
   min-width: 143px;
   list-style-type: none;
   background-color: #f8f7f4;
   border-radius: 5px;
   overflow: hidden;
+  visibility: hidden;
+  transition: 0.1s 0.2s;
   z-index: 100;
 }
 .main-nav__popup:hover {
-  display: block;
+  visibility: visible;
+}
+.main-nav__popup-item {
+  margin-bottom: 4px;
 }
 .main-nav__popup-link {
   display: block;
-  padding: 6px 20px;
+  padding: 6px 18px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -381,7 +407,7 @@ input[type=password] {
   color: #000000;
 }
 .main-nav__popup-link--title {
-  padding: 11px 20px;
+  padding: 11px 18px;
   font-weight: bold;
 }
 .main-nav__popup-link:hover {
@@ -459,6 +485,9 @@ input[type=password] {
   * PROMO SLIDER
   * ===========================================================
   */
+.promo-slider input[type=radio] {
+  display: none;
+}
 .promo-slider__item {
   display: none;
   position: relative;
@@ -466,7 +495,7 @@ input[type=password] {
 .promo-slider__item h2 {
   display: block;
   position: absolute;
-  bottom: 140px;
+  bottom: 130px;
   left: 50%;
   margin: 0px;
   width: 700px;
@@ -505,7 +534,7 @@ input[type=password] {
 .promo-cards {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -20px;
+  margin-top: -17px;
   padding: 0px 27px;
 }
 .promo-cards h2 {
@@ -515,7 +544,8 @@ input[type=password] {
 .promo-cards__item {
   margin: 0px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 15px 20px;
+  padding-bottom: 23px;
   width: 520px;
   z-index: 100;
   background-color: #849d8f;
@@ -537,15 +567,15 @@ input[type=password] {
 }
 .promo-cards__item-content h3 {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
   text-align: left;
 }
 .promo-cards__item-content p {
-  margin-top: 20px;
-  margin-bottom: 38px;
+  margin-top: 15px;
+  margin-bottom: 45px;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
@@ -653,6 +683,7 @@ input[type=password] {
   */
 .product-item {
   position: relative;
+  margin-top: 20px;
   width: 267px;
 }
 .product-item--hit::before {
@@ -679,7 +710,7 @@ input[type=password] {
 }
 .product-item__price {
   position: absolute;
-  top: 200px;
+  top: 210px;
   left: 0px;
 }
 .product-item__cost {
@@ -693,6 +724,8 @@ input[type=password] {
   font-weight: bold;
 }
 .product-item__desc {
+  margin: 15px 0px;
+  margin-bottom: 17px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -711,7 +744,7 @@ input[type=password] {
   */
 .about-shop {
   margin: 20px 27px;
-  padding: 30px 20px;
+  padding: 15px 20px;
   color: #323232;
   background-color: #eee0c4;
   background-image: url('../img/wafer-bg-pattern.jpg');
@@ -719,25 +752,26 @@ input[type=password] {
   border-radius: 17px;
 }
 .about-shop h2 {
-  margin-top: 0px;
+  margin: 10px 0px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
 }
 .about-shop__items {
   margin: 0;
-  padding: 0px 10px;
+  padding: 0px;
   -moz-column-count: 2;
        column-count: 2;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
   list-style-type: none;
 }
 .about-shop__item {
   position: relative;
   padding: 10px;
-  padding-left: 60px;
-  padding-bottom: 30px;
+  padding-left: 57px;
+  padding-right: 5px;
+  padding-bottom: 11px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -808,11 +842,14 @@ input[type=password] {
 }
 .notes__note-title {
   margin-top: 0px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 22px;
   font-weight: bold;
 }
 .notes__note-link {
+  display: inline-block;
+  width: 320px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -869,7 +906,7 @@ input[type=password] {
   position: absolute;
   top: 62px;
   right: 27px;
-  padding: 30px 25px;
+  padding: 25px 25px;
   width: 252px;
   color: #323232;
   background-color: #fffffe;
@@ -877,16 +914,22 @@ input[type=password] {
   text-align: center;
 }
 .contacts__address p {
-  margin-top: 0px;
+  margin-top: 5px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
   text-align: left;
 }
 .contacts__address strong {
+  display: inline-block;
+  margin: 2px 0px;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
+}
+.contacts__address .btn {
+  margin: 6px 0px;
 }
 /*!
   * ===========================================================
@@ -896,28 +939,30 @@ input[type=password] {
 .page-footer {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  padding: 15px 27px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 18px 27px;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
 }
 .page-footer__nav {
-  margin: 0px auto;
+  margin: 0px;
+  width: 350px;
 }
 .page-footer__nav-items {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 390px;
-  -moz-column-count: 2;
-       column-count: 2;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
   list-style-type: none;
 }
 .page-footer__nav-item {
   position: relative;
+  box-sizing: border-box;
   padding-left: 20px;
+  padding-bottom: 5px;
+  min-width: 150px;
 }
 .page-footer__nav-item--like {
   font-weight: bold;
@@ -938,40 +983,48 @@ input[type=password] {
 .page-footer__nav-link {
   color: #ffffff;
 }
+.page-footer__copyright-label {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+}
 .page-footer__copyright-link {
   color: #ffffff;
 }
 /*!
   * ===========================================================
-  * SOCIAL LONKS SECTION
+  * SOCIAL LINKS SECTION
   * ===========================================================
   */
-.social {
-  font-size: 0px;
+.social-links__items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px;
+  width: 186px;
 }
-.social__btn {
-  position: relative;
-  display: inline-block;
-  margin: 0px 3px;
+.social-links__item {
+  display: block;
+  margin: 5px 0px;
+  padding: 0px;
   width: 38px;
   height: 38px;
   font-size: 0px;
-  background-color: transparent;
+  background-color: rgba(225, 225, 225, 0.5);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-radius: 19px;
   opacity: 0.8;
 }
-.social__btn--tw {
+.social-links__item--tw {
   background-image: url('../img/twitter-icon.png');
 }
-.social__btn--inst {
+.social-links__item--inst {
   background-image: url('../img/intagram-icon.png');
 }
-.social__btn--fb {
+.social-links__item--fb {
   background-image: url('../img/facebook-icon.png');
 }
-.social__btn--vk {
+.social-links__item--vk {
   background-image: url('../img/vk-icon.png');
 }
 /*!
