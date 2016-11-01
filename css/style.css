@@ -802,43 +802,33 @@ input[type=password] {
 }
 /*!
   * ===========================================================
-  * NOTES
+  * WIDJETS
   * ===========================================================
   */
-.notes {
-  display: flex;
-  flex-wrap: wrap;
+.widgets {
   padding: 20px 27px;
 }
-.notes h2 {
+.widgets h2 {
   display: block;
   width: 100%;
 }
-.notes__note-item {
+.widgets__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.widgets__item {
+  display: flex;
+  align-items: stretch;
   margin: 0px;
   margin-bottom: 20px;
-  padding: 20px;
-  width: 520px;
-  min-height: 180px;
+  padding: 0px;
+  width: 560px;
+  min-height: 220px;
   color: #323232;
-  background-color: #f8f7f4;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-color: #ffffff;
   border-radius: 15px;
-  z-index: 100;
-}
-.notes__note-item--blog {
-  background-image: url('../img/ice-cream-background.jpg');
-}
-.notes__note-item--subscribe {
-  padding: 5px;
-  width: 550px;
-  background-repeat: repeat;
-  background-position: 0 0;
-  background-image: url('../img/letter-bg-pattern.png');
-}
-.notes__note-item:nth-child(odd) {
-  margin-left: auto;
+  overflow: hidden;
 }
 .notes__note-title {
   margin-top: 0px;
@@ -863,30 +853,82 @@ input[type=password] {
 }
 /*!
   * ===========================================================
-  * SUBSCRIBE FORM
+  * BLOG WIDJET
   * ===========================================================
   */
-.subscribe-form {
+.blog-widjet {
+  box-sizing: border-box;
+  padding: 5px 20px;
+  width: 100%;
+  min-height: 220px;
+  overflow: hidden;
+  background-color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-image: url('../img/ice-cream-background.jpg');
+}
+.blog-widjet__title {
+  margin-top: 18px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.blog-widjet__content {
+  width: 55%;
+}
+.blog-widjet__link {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+}
+/*!
+  * ===========================================================
+  * SUBSCRIBE WIDJET
+  * ===========================================================
+  */
+.subscribe-widjet {
+  display: flex;
+  align-items: stretch;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  min-height: 220px;
+  overflow: hidden;
+  background-color: #ffffff;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-image: url('../img/letter-bg-pattern.png');
+}
+.subscribe-widjet__wrap {
+  padding: 30px 20px;
+  min-height: 150px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
+}
+.subscribe-widjet__form {
   font-size: 0px;
   text-align: right;
 }
-.subscribe-form input[type=email] {
+.subscribe-widjet__form input[type=email] {
   margin-bottom: 0px;
-  margin-right: 10px;
-  width: 358px;
+  margin-right: 15px;
+  width: 365px;
 }
-.subscribe-form input[type=submit] {
-  padding: 10px 20px;
+.subscribe-widjet__form input[type=submit] {
+  padding: 10px 16px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
 }
-.subscribe-form__label {
+.subscribe-widjet__content {
   margin-bottom: 35px;
-  color: #5a5a5a;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
+  color: #5a5a5a;
   text-align: left;
 }
 /*!

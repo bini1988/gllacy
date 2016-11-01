@@ -79,16 +79,22 @@
 .about-shop{margin:20px 27px;padding:15px 20px;color:#323232;background-color:#eee0c4;background-image:url(../img/wafer-bg-pattern.jpg);background-position:15px 50%;border-radius:17px}.about-shop h2{margin:10px 0;font-size:24px;line-height:30px;font-weight:700}.about-shop__items{margin:0;padding:0;-moz-column-count:2;column-count:2;-moz-column-gap:25px;column-gap:25px;list-style-type:none}.about-shop__item{position:relative;padding:10px 5px 11px 57px;font-size:16px;line-height:22px;font-weight:400}.about-shop__item::before{content:"";display:block;position:absolute;width:49px;height:49px;top:0;left:0;background-color:transparent;background-position:50% 50%;border-radius:17px}.about-shop__item--icecream::before{background-image:url(../img/ice-cream-icon.png)}.about-shop__item--leaf::before{background-image:url(../img/leaf-icon.png)}.about-shop__item--cow::before{background-image:url(../img/cow-icon.png)}.about-shop__item--temp::before{background-image:url(../img/temp-icon.png)}
 /*!
   * ===========================================================
-  * NOTES
+  * WIDJETS
   * ===========================================================
   */
-.notes{display:flex;flex-wrap:wrap;padding:20px 27px}.notes h2{display:block;width:100%}.notes__note-item{margin:0 0 20px;padding:20px;width:520px;min-height:180px;color:#323232;background-color:#f8f7f4;background-repeat:no-repeat;background-position:50% 50%;border-radius:15px;z-index:100}.notes__note-item--blog{background-image:url(../img/ice-cream-background.jpg)}.notes__note-item--subscribe{padding:5px;width:550px;background-repeat:repeat;background-position:0 0;background-image:url(../img/letter-bg-pattern.png)}.notes__note-item:nth-child(odd){margin-left:auto}.notes__note-title{margin-top:0;margin-bottom:10px;font-size:16px;line-height:22px;font-weight:700}.notes__note-link{display:inline-block;width:320px;font-size:24px;line-height:30px;font-weight:700;color:#323232}.notes__item-wrap{padding:30px 20px;min-height:150px;background-color:#f8f7f4;border-radius:15px}
+.widgets{padding:20px 27px}.widgets h2{display:block;width:100%}.widgets__items{display:flex;justify-content:space-between;flex-wrap:wrap}.widgets__item{display:flex;align-items:stretch;margin:0 0 20px;padding:0;width:560px;min-height:220px;color:#323232;background-color:#fff;border-radius:15px;overflow:hidden}.notes__note-title{margin-top:0;margin-bottom:10px;font-size:16px;line-height:22px;font-weight:700}.notes__note-link{display:inline-block;width:320px;font-size:24px;line-height:30px;font-weight:700;color:#323232}.notes__item-wrap{padding:30px 20px;min-height:150px;background-color:#f8f7f4;border-radius:15px}
 /*!
   * ===========================================================
-  * SUBSCRIBE FORM
+  * BLOG WIDJET
   * ===========================================================
   */
-.subscribe-form{font-size:0;text-align:right}.subscribe-form input[type=email]{margin-bottom:0;margin-right:10px;width:358px}.subscribe-form input[type=submit]{padding:10px 20px;font-size:18px;line-height:24px;font-weight:700}.subscribe-form__label{margin-bottom:35px;color:#5a5a5a;font-size:16px;line-height:22px;font-weight:400;text-align:left}
+.blog-widjet{box-sizing:border-box;padding:5px 20px;width:100%;min-height:220px;overflow:hidden;background-color:#fff;background-size:cover;background-repeat:no-repeat;background-position:50% 100%;background-image:url(../img/ice-cream-background.jpg)}.blog-widjet__title{margin-top:18px;margin-bottom:5px;font-size:16px;line-height:22px;font-weight:700}.blog-widjet__content{width:55%}.blog-widjet__link{font-size:24px;line-height:30px;font-weight:700;color:#323232}
+/*!
+  * ===========================================================
+  * SUBSCRIBE WIDJET
+  * ===========================================================
+  */
+.subscribe-widjet{display:flex;align-items:stretch;box-sizing:border-box;padding:5px;width:100%;min-height:220px;overflow:hidden;background-color:#fff;background-repeat:repeat;background-position:0 0;background-image:url(../img/letter-bg-pattern.png)}.subscribe-widjet__wrap{padding:30px 20px;min-height:150px;background-color:#f8f7f4;border-radius:15px}.subscribe-widjet__form{font-size:0;text-align:right}.subscribe-widjet__form input[type=email]{margin-bottom:0;margin-right:15px;width:365px}.subscribe-widjet__form input[type=submit]{padding:10px 16px;font-size:18px;line-height:24px;font-weight:700}.subscribe-widjet__content{margin-bottom:35px;font-size:16px;line-height:22px;font-weight:400;color:#5a5a5a;text-align:left}
 /*!
   * ===========================================================
   * CONTACTS

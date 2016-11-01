@@ -237,19 +237,29 @@
           </li>
         </ul>
       </section>
-      <section class="notes">
-        <h2 class="visually-hidden">Заметки</h2>
-        <div class="notes__note-item  notes__note-item--blog">
-          <h3 class="notes__note-title">Новое в нашем блоге</h3>
-          <a class="notes__note-link" href="/">10  способов сервировки фруктовых щербетов к столу</a>
-        </div>
-        <div class="notes__note-item  notes__note-item--subscribe">
-          <div class="notes__item-wrap">
-            <form class="subscribe-form" id="subscribe-form" action="/" method="get">
-              <div class="subscribe-form__label">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</div>
-              <input type="email" name="email" placeholder="Электронная почта">
-              <input class="btn" type="submit" value="Отправить">
-            </form>
+      <section class="widgets">
+        <h2 class="visually-hidden">Виджеты</h2>
+        <div class="widgets__items">
+          <div class="widgets__item">
+            <div class="blog-widjet">
+              <h3 class="blog-widjet__title">Новое в нашем блоге</h3>
+              <div class="blog-widjet__content">
+                <a class="blog-widjet__link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+              </div>
+            </div>
+          </div>
+          <div class="widgets__item">
+            <div class="subscribe-widjet">
+              <div class="subscribe-widjet__wrap">
+                <form class="subscribe-widjet__form" id="subscribe-form" action="/" method="get">
+                  <div class="subscribe-widjet__content">
+                    Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+                  </div>
+                  <input type="email" name="email" placeholder="Электронная почта">
+                  <input class="btn" type="submit" value="Отправить">
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -257,8 +267,9 @@
         <h2 class="visually-hidden">Контакты</h2>
         <img class="contacts__map" src="img/road-map.jpg" width="1200" height="430" alt="Ма на карте">
         <div class="contacts__address">
-          <p>Адрес главного офиса и<br>
-            офлайн магазина:<br>
+          <p>Адрес главного офиса и
+            <br> офлайн магазина:
+            <br>
             <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
           </p>
           <p>Для заказов по телефону:
