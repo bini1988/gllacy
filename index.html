@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -11,29 +12,31 @@
   <div class="page-wrapper">
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="img/logo.svg" alt="GllacyShop">
+        <img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
       </div>
       <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item">
             <a href="/catalog.html" class="main-nav__link">Каталог</a>
-            <ul class="main-nav__popup">
-              <li class="main-nav__popup-item">
-                <a href="/" class="main-nav__popup-link  main-nav__popup-link--title">Новинки</a>
-              </li>
-              <li class="main-nav__popup-item">
-                <a href="/" class="main-nav__popup-link">Сливочное</a>
-              </li>
-              <li class="main-nav__popup-item">
-                <a href="/" class="main-nav__popup-link">Щербеты</a>
-              </li>
-              <li class="main-nav__popup-item">
-                <a href="/" class="main-nav__popup-link">Фруктовый лёд</a>
-              </li>
-              <li class="main-nav__popup-item">
-                <a href="/" class="main-nav__popup-link">Мелорин</a>
-              </li>
-            </ul>
+            <div class="main-nav__popup-wrap">
+              <ul class="main-nav__popup">
+                <li class="main-nav__popup-item">
+                  <a href="/" class="main-nav__popup-link  main-nav__popup-link--title">Новинки</a>
+                </li>
+                <li class="main-nav__popup-item">
+                  <a href="/" class="main-nav__popup-link">Сливочное</a>
+                </li>
+                <li class="main-nav__popup-item">
+                  <a href="/" class="main-nav__popup-link">Щербеты</a>
+                </li>
+                <li class="main-nav__popup-item">
+                  <a href="/" class="main-nav__popup-link">Фруктовый лёд</a>
+                </li>
+                <li class="main-nav__popup-item">
+                  <a href="/" class="main-nav__popup-link">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="main-nav__item">
             <a href="/" class="main-nav__link">Доставка и оплата</a>
@@ -43,78 +46,31 @@
           </li>
         </ul>
       </nav>
-      <div class="page-header__search">
-        <span class="page-header__btn  page-header__btn--search">Поиск</span>
-        <form class="page-header__search-form" id="search-form" action="/" method="get">
-          <input type="text" name="search-query" placeholder="Что ищем?">
-        </form>
-      </div>
-      <div class="page-header__user">
-        <div class="page-header__user-login">
-          <span class="page-header__btn  page-header__btn--login">Вход</span>
-          <form class="login-form" id="login-form" action="/" method="post">
-            <input type="email" name="email" placeholder="Электронная почта">
-            <input type="password" name="password" placeholder="Пароль">
-            <input class="btn" type="submit" value="Войти">
-            <div class="login-form__link-items">
-              <a class="login-form__link-item" href="#">Забыли пароль?</a>
-              <a class="login-form__link-item" href="#">Новая регистрация</a>
-            </div>
+      <div class="page-header__btn  page-header__btn--search">
+        Поиск
+        <div class="page-header__popup-wrap  page-header__popup-wrap--extra-space">
+          <form class="page-header__search-form" id="search-form" action="/" method="get">
+            <input type="text" name="search-query" placeholder="Что ищем?">
           </form>
         </div>
-        <div class="page-header__user-basket">
-          <span class="page-header__btn  page-header__btn--basket">Пусто</span>
-          <div class="page-header__basket-popup">
-            <table class="basket-table">
-              <caption class="visually-hidden">Товары в корзине:</caption>
-              <tbody>
-                <tr class="basket-table__item">
-                  <td class="basket-table__col-control">
-                    <button class="basket-table__btn  basket-table__btn--remove">Удалить</button>
-                  </td>
-                  <td class="basket-table__col-preview">
-                    <img src="img/ice-cream-icon-1.gif" alt="Пломбир с апельсиновым джемом">
-                  </td>
-                  <td class="basket-table__col-label">
-                    Пломбир с апельсиновым джемом
-                  </td>
-                  <td class="basket-table__col-price">
-                    <span class="basket-table__amount">1,5 кг</span> x
-                    <span class="basket-table__price">200 руб.</span>
-                  </td>
-                  <td class="basket-table__col-sum">
-                    <span class="basket-table__sum">300 руб.</span>
-                  </td>
-                </tr>
-                <tr class="basket-table__item">
-                  <td class="basket-table__col-control">
-                    <button class="basket-table__btn  basket-table__btn--remove">Удалить</button>
-                  </td>
-                  <td class="basket-table__col-preview">
-                    <img src="img/ice-cream-icon-2.gif" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                  </td>
-                  <td class="basket-table__col-label">
-                    Клубничный пломбир с присыпкой из белого шоколада
-                  </td>
-                  <td class="basket-table__col-price">
-                    <span class="basket-table__amount">1,5 кг</span> x
-                    <span class="basket-table__price">300 руб.</span>
-                  </td>
-                  <td class="basket-table__col-sum">
-                    <span class="basket-table__sum">450 руб.</span>
-                  </td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr class="basket-table__item  basket-table__item--total">
-                  <td colspan="5">
-                    <span class="basket-table__total">Итого: 750 руб.</span>
-                    <a class="btn" href="/">Оформить заказ</a>
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
+      </div>
+      <div class="page-header__user">
+        <div class="page-header__btn  page-header__btn--login">
+          Вход
+          <div class="page-header__popup-wrap">
+            <form class="login-form" id="login-form" action="/" method="post">
+              <input type="email" name="email" placeholder="Электронная почта">
+              <input type="password" name="password" placeholder="Пароль">
+              <input class="btn" type="submit" value="Войти">
+              <div class="login-form__link-items">
+                <a class="login-form__link-item" href="#">Забыли пароль?</a>
+                <a class="login-form__link-item" href="#">Новая регистрация</a>
+              </div>
+            </form>
           </div>
+        </div>
+        <div class="page-header__btn  page-header__btn--basket">
+          Пусто
         </div>
       </div>
       <div class="page-header__contacts">
