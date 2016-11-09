@@ -36,6 +36,17 @@ input[type=password] {
   border-radius: 5px;
 }
 .page-wrapper {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.page-wrapper:before,
+.page-wrapper:after {
+  content: "";
+  visibility: hidden;
+}
+.content-wrapper {
   min-width: 900px;
   max-width: 1200px;
   margin: 0 auto;
@@ -71,6 +82,7 @@ input[type=password] {
 }
 .btn {
   display: inline-block;
+  vertical-align: top;
   padding: 8px 17px;
   padding-bottom: 12px;
   font-family: Roboto, Arial, sans-serif;
@@ -80,15 +92,32 @@ input[type=password] {
   text-align: center;
   text-transform: none;
   text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   white-space: normal;
-  background-color: #f06542;
-  background: linear-gradient(to top, #e74a35, #f26843);
+  background-color: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   color: #ffffff;
-  box-shadow: none;
   border: none;
   border-radius: 22px;
   cursor: pointer;
   outline: none;
+}
+.btn--large {
+  padding: 7px 40px;
+  padding-bottom: 11px;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  border-radius: 31px;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px #ac1000;
+}
+.btn:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px #ac1000;
 }
 /*!
   * ===========================================================
@@ -204,8 +233,8 @@ input[type=password] {
   align-items: center;
   flex-wrap: nowrap;
   position: relative;
-  padding: 0px 27px;
-  padding-top: 5px;
+  padding: 5px 27px;
+  padding-bottom: 8px;
   min-height: 70px;
 }
 .page-header .main-nav {
@@ -312,7 +341,7 @@ input[type=password] {
 }
 .page-header__contacts {
   position: absolute;
-  top: 100%;
+  top: 90%;
   right: 0px;
   padding: 0px 27px;
   text-align: right;
@@ -323,6 +352,7 @@ input[type=password] {
   font-weight: 700;
 }
 .page-header__contacts-tel {
+  padding: 5px 0px;
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
@@ -515,46 +545,75 @@ input[type=password] {
   * PROMO SLIDER
   * ===========================================================
   */
+.promo-slider {
+  position: relative;
+  padding-top: 310px;
+  padding-bottom: 38px;
+}
 .promo-slider input[type=radio] {
   display: none;
 }
-.promo-slider__item {
+.promo-slider__toggle {
+  display: none;
+}
+#btn-1:checked ~ .page-wrapper .promo-slider #promo-slide-1,
+#btn-2:checked ~ .page-wrapper .promo-slider #promo-slide-2,
+#btn-3:checked ~ .page-wrapper .promo-slider #promo-slide-3 {
+  display: block;
+}
+#btn-1:checked ~ .page-wrapper .promo-slider label[for="btn-1"],
+#btn-2:checked ~ .page-wrapper .promo-slider label[for="btn-2"],
+#btn-3:checked ~ .page-wrapper .promo-slider label[for="btn-3"] {
+  background-color: #ffffff;
+}
+#btn-1:checked ~ .page-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slider-slide-1.png");
+}
+#btn-2:checked ~ .page-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/slider-slide-2.png");
+}
+#btn-3:checked ~ .page-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/slider-slide-3.png");
+}
+.promo-slider__slide {
   display: none;
   position: relative;
+  text-align: center;
 }
-.promo-slider__item h2 {
+.promo-slider__slide-title {
   display: block;
-  position: absolute;
-  bottom: 130px;
-  left: 50%;
-  margin: 0px;
-  width: 700px;
-  height: 140px;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  width: 670px;
   font-size: 60px;
   line-height: 60.35px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
-  transform: translateX(-50%);
 }
-.promo-slider__item img {
-  display: block;
-  margin: 0 auto;
-  z-index: 80;
+.promo-slider__slide-title--tiny {
+  width: 650px;
 }
-.promo-slider__item a {
-  display: inline-block;
+.promo-slider__controls {
   position: absolute;
-  bottom: 60px;
-  left: 50%;
-  padding: 9px 40px;
-  font-size: 32px;
-  line-height: 44px;
-  font-weight: bold;
-  border-radius: 31px;
-  transform: translateX(-50%);
+  padding: 0px 27px;
+  bottom: 57px;
+  left: 0px;
+  font-size: 0px;
+  z-index: 120;
 }
-.promo-slider__item:first-child {
-  display: block;
+.promo-slider__controls label {
+  display: inline-block;
+  margin-right: 9px;
+  width: 17px;
+  height: 17px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 /*!
   * ===========================================================
@@ -564,8 +623,8 @@ input[type=password] {
 .promo-cards {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -17px;
   padding: 0px 27px;
+  padding-top: 5px;
 }
 .promo-cards h2 {
   display: block;
