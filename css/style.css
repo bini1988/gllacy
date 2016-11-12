@@ -689,7 +689,14 @@ input[type=password] {
 }
 .promo-hits__items {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+}
+.promo-hits__items .product-item {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
 }
 /*!
   * ===========================================================
@@ -776,11 +783,13 @@ input[type=password] {
   * ===========================================================
   */
 .product-item {
-  position: relative;
   margin-top: 20px;
   width: 267px;
 }
-.product-item--hit::before {
+.product-item__preview {
+  position: relative;
+}
+.product-item__preview--hit::before {
   content: "";
   display: block;
   position: absolute;
@@ -793,9 +802,6 @@ input[type=password] {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.product-item:not(:nth-child(4n)) {
-  margin-right: 26px;
-}
 .product-item__img-wrap {
   width: 266px;
   height: 266px;
@@ -804,18 +810,19 @@ input[type=password] {
 }
 .product-item__price {
   position: absolute;
-  top: 210px;
+  padding: 7px 0px;
+  bottom: 0px;
   left: 0px;
 }
 .product-item__cost {
   font-size: 45px;
   line-height: 45px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .product-item__amount {
   font-size: 30px;
   line-height: 45px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .product-item__desc {
   margin: 15px 0px;
@@ -824,6 +831,9 @@ input[type=password] {
   line-height: 22px;
   font-weight: normal;
   text-align: center;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
+          text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 .product-item__hover-wrap {
   display: none;

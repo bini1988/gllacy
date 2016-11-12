@@ -58,7 +58,7 @@ body,html,input[type=email],input[type=password],input[type=text]{font-family:Ro
   * PROMO HITS
   * ===========================================================
   */
-.promo-hits{padding:0 27px}.promo-hits h2{display:block;width:100%}.promo-hits__items{display:flex;flex-wrap:wrap}
+.promo-hits{padding:0 27px}.promo-hits h2{display:block;width:100%}.promo-hits__items{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}.promo-hits__items .product-item{flex-grow:0;flex-shrink:1;flex-basis:auto}
 /*!
   * ===========================================================
   * FILTER FORM
@@ -70,7 +70,7 @@ body,html,input[type=email],input[type=password],input[type=text]{font-family:Ro
   * PRODUCT ITEM
   * ===========================================================
   */
-.product-item{position:relative;margin-top:20px;width:267px}.product-item--hit::before{content:"";display:block;position:absolute;top:0;left:0;width:61px;height:61px;background-color:transparent;background-image:url(../img/hit-mark.png);background-repeat:no-repeat;background-position:50% 50%}.product-item:not(:nth-child(4n)){margin-right:26px}.product-item__img-wrap{width:266px;height:266px;border-radius:133px;overflow:hidden}.product-item__price{position:absolute;top:210px;left:0}.product-item__amount,.product-item__cost{font-size:45px;line-height:45px;font-weight:700}.product-item__amount{font-size:30px}.product-item__desc{margin:15px 0 17px;font-size:16px;line-height:22px;font-weight:400;text-align:center}.product-item__hover-wrap,.product-item__hover-wrap--hidden{display:none}
+.product-item{margin-top:20px;width:267px}.product-item__preview{position:relative}.product-item__preview--hit::before{content:"";display:block;position:absolute;top:0;left:0;width:61px;height:61px;background-color:transparent;background-image:url(../img/hit-mark.png);background-repeat:no-repeat;background-position:50% 50%}.product-item__img-wrap{width:266px;height:266px;border-radius:133px;overflow:hidden}.product-item__price{position:absolute;padding:7px 0;bottom:0;left:0}.product-item__amount,.product-item__cost{font-size:45px;line-height:45px;font-weight:700}.product-item__amount{font-size:30px}.product-item__desc{margin:15px 0 17px;font-size:16px;line-height:22px;font-weight:400;text-align:center;text-decoration:underline;-webkit-text-decoration-color:rgba(255,255,255,.2);text-decoration-color:rgba(255,255,255,.2)}.product-item__hover-wrap,.product-item__hover-wrap--hidden{display:none}
 /*!
   * ===========================================================
   * ABOUT SHOP
