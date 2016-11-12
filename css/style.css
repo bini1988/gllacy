@@ -848,7 +848,7 @@ input[type=password] {
   */
 .about-shop {
   margin: 20px 27px;
-  padding: 15px 20px;
+  padding: 15px 5px;
   color: #323232;
   background-color: #eee0c4;
   background-image: url('../img/wafer-bg-pattern.jpg');
@@ -856,29 +856,34 @@ input[type=password] {
   border-radius: 17px;
 }
 .about-shop h2 {
-  margin: 10px 0px;
+  margin: 10px 15px;
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .about-shop__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0px;
-  -moz-column-count: 2;
-       column-count: 2;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
   list-style-type: none;
 }
 .about-shop__item {
   position: relative;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  box-sizing: border-box;
   padding: 10px;
-  padding-left: 57px;
-  padding-right: 5px;
+  padding-left: 70px;
+  padding-right: 20px;
   padding-bottom: 11px;
+  width: 50%;
   font-size: 16px;
   line-height: 22px;
-  font-weight: normal;
+  font-weight: 400;
 }
 .about-shop__item::before {
   content: "";
@@ -887,10 +892,10 @@ input[type=password] {
   width: 49px;
   height: 49px;
   top: 0px;
-  left: 0px;
+  left: 15px;
   background-color: transparent;
   background-position: 50% 50%;
-  border-radius: 17px;
+  background-repeat: no-repeat;
 }
 .about-shop__item--icecream::before {
   background-image: url('../img/ice-cream-icon.png');
