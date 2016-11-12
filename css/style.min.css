@@ -100,7 +100,7 @@ body,html,input[type=email],input[type=password],input[type=text]{font-family:Ro
   * CONTACTS
   * ===========================================================
   */
-.contacts{position:relative;height:430px}.contacts img{max-width:100%;height:auto}.contacts__address{position:absolute;top:62px;right:27px;padding:25px;width:252px;color:#323232;background-color:#fffffe;border-radius:15px;text-align:center}.contacts__address p{margin-top:5px;margin-bottom:20px;font-size:14px;line-height:20px;font-weight:400;text-align:left}.contacts__address strong{display:inline-block;margin:2px 0;font-size:18px;line-height:22px;font-weight:700}.contacts__address .btn{margin:6px 0}
+.contacts{height:430px}.contacts,.contacts__map-wrap{position:relative}.contacts__map-wrap--mark::before{content:"";display:block;position:absolute;top:139px;left:266px;width:218px;height:142px;background-color:transparent;background-image:url(../img/map-marker.png);background-repeat:no-repeat;background-position:50% 50%}.contacts__map{max-width:100%;height:auto}.contacts__address{position:absolute;top:50%;right:0;padding:28px 25px 33px;margin:0 27px;width:252px;color:#323232;background-color:#fffffe;border-radius:15px;text-align:center;transform:translateY(-50%)}.contacts__address p{margin-top:0;margin-bottom:14px;font-size:14px;line-height:20px;font-weight:400;text-align:left}.contacts__address b,.contacts__address strong{display:inline-block;font-size:18px;font-weight:700}.contacts__address strong{margin:2px 0;line-height:24px}.contacts__address b{margin-top:6px;margin-bottom:4px;line-height:22px}.contacts__address .btn{box-sizing:border-box;margin-top:9px;width:100%}
 /*!
   * ===========================================================
   * PAGE FOOTER
