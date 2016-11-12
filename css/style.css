@@ -111,6 +111,10 @@ input[type=password] {
   font-weight: 700;
   border-radius: 31px;
 }
+.btn--tiny {
+  padding-left: 17px;
+  padding-right: 17px;
+}
 .btn:hover {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px #ac1000;
@@ -924,41 +928,20 @@ input[type=password] {
 .widgets__items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
 }
 .widgets__item {
-  display: flex;
-  align-items: stretch;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 48.86%;
   margin: 0px;
   margin-bottom: 20px;
   padding: 0px;
-  width: 560px;
-  min-height: 220px;
   color: #323232;
   background-color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
-}
-.notes__note-title {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: bold;
-}
-.notes__note-link {
-  display: inline-block;
-  width: 320px;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #323232;
-}
-.notes__item-wrap {
-  padding: 30px 20px;
-  min-height: 150px;
-  background-color: #f8f7f4;
-  border-radius: 15px;
 }
 /*!
   * ===========================================================
@@ -968,29 +951,27 @@ input[type=password] {
 .blog-widjet {
   box-sizing: border-box;
   padding: 5px 20px;
-  width: 100%;
   min-height: 220px;
-  overflow: hidden;
   background-color: #ffffff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-image: url('../img/ice-cream-background.jpg');
+  background-position: center center;
+  background-image: url('../img/bg-ice-cream.jpg');
 }
 .blog-widjet__title {
   margin-top: 18px;
   margin-bottom: 5px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .blog-widjet__content {
-  width: 55%;
+  width: 285px;
 }
 .blog-widjet__link {
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: #323232;
 }
 /*!
@@ -999,46 +980,40 @@ input[type=password] {
   * ===========================================================
   */
 .subscribe-widjet {
-  display: flex;
-  align-items: stretch;
   box-sizing: border-box;
   padding: 5px;
-  width: 100%;
   min-height: 220px;
-  overflow: hidden;
   background-color: #ffffff;
   background-repeat: repeat;
   background-position: 0 0;
-  background-image: url('../img/letter-bg-pattern.png');
+  background-image: url('../img/bg-letter-pattern.png');
 }
 .subscribe-widjet__wrap {
-  padding: 30px 20px;
-  min-height: 150px;
+  box-sizing: border-box;
+  padding: 28px 20px;
+  padding-bottom: 35px;
   background-color: #f8f7f4;
-  border-radius: 15px;
+  border-radius: 12px;
+}
+.subscribe-widjet__content {
+  margin-bottom: 37px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #5a5a5a;
+  text-align: left;
 }
 .subscribe-widjet__form {
   font-size: 0px;
-  text-align: right;
 }
 .subscribe-widjet__form input[type=email] {
   margin-bottom: 0px;
-  margin-right: 15px;
-  width: 365px;
+  margin-right: 10px;
+  width: 368px;
+  height: 44px;
 }
 .subscribe-widjet__form input[type=submit] {
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-.subscribe-widjet__content {
-  margin-bottom: 35px;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: normal;
-  color: #5a5a5a;
-  text-align: left;
+  height: 44px;
 }
 /*!
   * ===========================================================
