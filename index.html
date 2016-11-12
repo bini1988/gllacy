@@ -299,6 +299,21 @@
         </div>
       </footer>
     </div>
+    <div class="overlay"></div>
+    <div class="modal-dialog">
+      <div class="modal-dialog__title">
+        Мы обязательно вам ответим!
+      </div>
+      <button class="modal-dialog__btn-close" type="button" title="Закрыть">Закрыть</button>
+      <div class="modal-dialog__content">
+        <form class="feedback-form" id="feedback-form" action="/" method="post">
+          <input type="text" name="name" placeholder="Как вас зовут?" required>
+          <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
+          <textarea name="message" placeholder="Напишите что-нибудь..." required></textarea>
+          <input class="btn" type="submit" value="Отправить">
+        </form>
+      </div>
+    </div>
   </div>
 </body>
 

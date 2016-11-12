@@ -35,7 +35,24 @@ input[type=password] {
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
+textarea {
+  box-sizing: border-box;
+  margin: 0px;
+  margin-bottom: 25px;
+  padding: 9px 15px;
+  min-width: 428px;
+  min-height: 155px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  resize: none;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
 .page-wrapper {
+  position: relative;
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -63,9 +80,6 @@ input[type=password] {
 }
 .overlay--show {
   display: block;
-}
-.overlay--hide {
-  display: none;
 }
 .hidden {
   display: none;
@@ -146,6 +160,24 @@ input[type=password] {
   line-height: 21px;
   font-weight: 400;
   color: #323232;
+}
+/*!
+  * ===========================================================
+  * FEEDBACK FORM
+  * ===========================================================
+  */
+.feedback-form {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.feedback-form input[type=text] {
+  display: block;
+  min-width: 267px;
+}
+.feedback-form input[type=email] {
+  display: block;
+  min-width: 267px;
 }
 /*!
   * ===========================================================
@@ -1265,4 +1297,65 @@ input[type=password] {
   color: #353535;
   background-color: #ffffff;
   border-radius: 13px;
+}
+/*!
+  * ===========================================================
+  * MODAL DIALOG
+  * ===========================================================
+  */
+.modal-dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  padding: 15px 25px;
+  padding-bottom: 27px;
+  width: 427px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  z-index: 500;
+  transform: translate(-50%, -50%);
+}
+.modal-dialog--show {
+  display: block;
+}
+.modal-dialog__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+.modal-dialog__btn-close {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 0px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.modal-dialog__btn-close::before,
+.modal-dialog__btn-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  border-radius: 2px;
+}
+.modal-dialog__btn-close::before {
+  transform: rotate(45deg);
+}
+.modal-dialog__btn-close::after {
+  transform: rotate(-45deg);
+}
+.modal-dialog__content {
+  text-align: right;
 }
