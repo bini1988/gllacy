@@ -28,16 +28,16 @@
                     <a href="/" class="main-nav__popup-link  main-nav__popup-link--title">Новинки</a>
                   </li>
                   <li class="main-nav__popup-item">
-                    <a href="/" class="main-nav__popup-link">Сливочное</a>
+                    <a href="catalog.html" class="main-nav__popup-link">Сливочное</a>
                   </li>
                   <li class="main-nav__popup-item">
-                    <a href="/" class="main-nav__popup-link">Щербеты</a>
+                    <a href="#" class="main-nav__popup-link">Щербеты</a>
                   </li>
                   <li class="main-nav__popup-item">
-                    <a href="/" class="main-nav__popup-link">Фруктовый лёд</a>
+                    <a href="#" class="main-nav__popup-link">Фруктовый лёд</a>
                   </li>
                   <li class="main-nav__popup-item">
-                    <a href="/" class="main-nav__popup-link">Мелорин</a>
+                    <a href="#" class="main-nav__popup-link">Мелорин</a>
                   </li>
                 </ul>
               </div>
@@ -136,7 +136,11 @@
                   <span class="product-item__amount">/кг</span>
                 </div>
               </div>
-              <div class="product-item__desc">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+              <div class="product-item__desc">
+                <a href="#" class="product-item__link">
+                  Сливочное с апельсиновым джемом и цитрусовой стружкой
+                </a>
+              </div>
               <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                 <button class="btn  product-item__btn">Быстрый просмотр</button>
               </div>
@@ -151,7 +155,11 @@
                   <span class="product-item__amount">/кг</span>
                 </div>
               </div>
-              <div class="product-item__desc">Сливочно-кофейное с кусочками шоколада</div>
+              <div class="product-item__desc">
+                <a href="#" class="product-item__link">
+                  Сливочно-кофейное с кусочками шоколада
+                </a>
+              </div>
               <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                 <button class="btn  product-item__btn">Быстрый просмотр</button>
               </div>
@@ -166,7 +174,11 @@
                   <span class="product-item__amount">/кг</span>
                 </div>
               </div>
-              <div class="product-item__desc">Сливочно-клубничное с присыпкой из белого шоколада</div>
+              <div class="product-item__desc">
+                <a href="#" class="product-item__link">
+                  Сливочно-клубничное с присыпкой из белого шоколада
+                </a>
+              </div>
               <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                 <button class="btn  product-item__btn">Быстрый просмотр</button>
               </div>
@@ -181,7 +193,11 @@
                   <span class="product-item__amount">/кг</span>
                 </div>
               </div>
-              <div class="product-item__desc">Сливочное крем-брюле с карамельной подливкой</div>
+              <div class="product-item__desc">
+                <a href="#" class="product-item__link">
+                  Сливочное крем-брюле с карамельной подливкой
+                </a>
+              </div>
               <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                 <button class="btn  product-item__btn">Быстрый просмотр</button>
               </div>
@@ -219,7 +235,7 @@
                     <div class="subscribe-widjet__content">
                       Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
                     </div>
-                    <input type="email" name="email" placeholder="Электронная почта">
+                    <input type="email" name="subscribe-email" placeholder="Электронная почта" required>
                     <input class="btn  btn--tiny" type="submit" value="Отправить">
                   </form>
                 </div>
@@ -300,17 +316,26 @@
       </footer>
     </div>
     <div class="overlay"></div>
-    <div class="modal-dialog">
+    <div class="modal-dialog  modal-dialog--subscribe">
       <div class="modal-dialog__title">
         Мы обязательно вам ответим!
       </div>
       <button class="modal-dialog__btn-close" type="button" title="Закрыть">Закрыть</button>
       <div class="modal-dialog__content">
         <form class="feedback-form" id="feedback-form" action="/" method="post">
-          <input type="text" name="name" placeholder="Как вас зовут?" required>
-          <input type="email" name="email" placeholder="Ваша почта для ответа?" required>
-          <textarea name="message" placeholder="Напишите что-нибудь..." required></textarea>
-          <input class="btn" type="submit" value="Отправить">
+          <div class="input-wrap">
+            <input id="user-name" type="text" name="user-name" placeholder="Как вас зовут?" required>
+            <label for="user-name">Как вас зовут?</label>
+          </div>
+          <div class="input-wrap">
+            <input id="user-email" type="text" name="user-email" placeholder="Ваша почта для ответа?" required>
+            <label for="user-email">Ваша почта для ответа?</label>
+          </div>
+          <div class="input-wrap">
+            <textarea id="user-message" name="message" placeholder="Напишите что-нибудь..." required></textarea>
+            <label for="user-message">Напишите что-нибудь...</label>
+          </div>
+          <input class="btn  btn--tiny" type="submit" value="Отправить">
         </form>
       </div>
     </div>

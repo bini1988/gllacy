@@ -23,33 +23,174 @@ input[type=password] {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  padding: 9px 15px;
+  padding: 10px 15px;
   margin: 0px;
-  margin-bottom: 20px;
   min-width: 239px;
   font-family: Roboto, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   font-style: normal;
-  font-weight: 400;
-  border: 1px solid #d3d3d2;
+  font-weight: 700;
+  border: none;
   border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: inset 0px 0px 0px 1px #d3d3d2;
+  outline: none;
+}
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover {
+  box-shadow: inset 0px 0px 0px 2px #c7c6c5;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+  box-shadow: inset 0px 0px 0px 2px #8fbdec;
+}
+input[type=text]:focus::-webkit-input-placeholder,
+input[type=email]:focus::-webkit-input-placeholder,
+input[type=password]:focus::-webkit-input-placeholder {
+  font-size: 0px;
+}
+input[type=text]:focus::-moz-placeholder,
+input[type=email]:focus::-moz-placeholder,
+input[type=password]:focus::-moz-placeholder {
+  font-size: 0px;
+}
+input[type=text]:focus:-ms-input-placeholder,
+input[type=email]:focus:-ms-input-placeholder,
+input[type=password]:focus:-ms-input-placeholder {
+  font-size: 0px;
+}
+input[type=text]:focus::placeholder,
+input[type=email]:focus::placeholder,
+input[type=password]:focus::placeholder {
+  font-size: 0px;
+}
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+input[type=text]::-moz-placeholder,
+input[type=email]::-moz-placeholder,
+input[type=password]::-moz-placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.input-wrap {
+  position: relative;
+  padding-top: 20px;
+  background-color: transparent;
+}
+.input-wrap input:focus + label {
+  display: block;
+  color: #5b9ddf;
+}
+.input-wrap input:valid + label {
+  display: block;
+}
+.input-wrap label {
+  display: none;
+  position: absolute;
+  padding: 3.5px 15px;
+  top: 0px;
+  left: 0px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 13px;
+  font-style: normal;
+  font-weight: 400;
+  color: #999999;
+  background-color: transparent;
 }
 textarea {
   box-sizing: border-box;
   margin: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   padding: 9px 15px;
   min-width: 428px;
   min-height: 155px;
   font-family: Roboto, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   resize: none;
-  border: 1px solid #d3d3d2;
+  border: none;
   border-radius: 5px;
+  box-shadow: inset 0px 0px 0px 1px #d3d3d2;
+  outline: none;
+}
+textarea:focus + label {
+  display: block;
+  color: #5b9ddf;
+}
+textarea:valid + label {
+  display: block;
+}
+textarea:hover {
+  box-shadow: inset 0px 0px 0px 2px #c7c6c5;
+}
+textarea:focus {
+  box-shadow: inset 0px 0px 0px 2px #8fbdec;
+}
+textarea:focus::-webkit-input-placeholder {
+  font-size: 0px;
+}
+textarea:focus::-moz-placeholder {
+  font-size: 0px;
+}
+textarea:focus:-ms-input-placeholder {
+  font-size: 0px;
+}
+textarea:focus::placeholder {
+  font-size: 0px;
+}
+textarea::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+textarea::-moz-placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+textarea:-ms-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+textarea::placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
 }
 .page-wrapper {
   position: relative;
@@ -146,8 +287,15 @@ textarea {
   display: block;
   padding: 20px 18px;
   width: 239px;
+  font-size: 0px;
   background-color: #f8f7f4;
   border-radius: 5px;
+  cursor: default;
+}
+.login-form input[type=text],
+.login-form input[type=password],
+.login-form input[type=email] {
+  margin-bottom: 20px;
 }
 .login-form__link-items {
   display: inline-block;
@@ -160,6 +308,16 @@ textarea {
   line-height: 21px;
   font-weight: 400;
   color: #323232;
+}
+.login-form__link-item:hover {
+  color: #e84d37;
+  -webkit-text-decoration-color: rgba(236, 89, 60, 0.3);
+          text-decoration-color: rgba(236, 89, 60, 0.3);
+}
+.login-form__link-item:active {
+  color: #e84d37;
+  -webkit-text-decoration-color: rgba(236, 89, 60, 0.3);
+          text-decoration-color: rgba(236, 89, 60, 0.3);
 }
 /*!
   * ===========================================================
@@ -364,9 +522,9 @@ textarea {
   padding: 20px 15px;
   background-color: #f8f7f4;
   border-radius: 5px;
+  cursor: default;
 }
 .page-header__search-form input[type=text] {
-  margin: 0px;
   min-width: 312px;
 }
 .page-header__user {
@@ -424,6 +582,15 @@ textarea {
   border-radius: 16px;
 }
 .main-nav__item:hover .main-nav__link {
+  text-decoration: none;
+  color: #323232;
+}
+.main-nav__item:active {
+  background-color: #f7f6f3;
+  border-radius: 16px;
+  box-shadow: inset 0 2px 2px #696969;
+}
+.main-nav__item:active .main-nav__link {
   text-decoration: none;
   color: #323232;
 }
@@ -651,6 +818,12 @@ textarea {
   border-radius: 50%;
   cursor: pointer;
 }
+.promo-slider__controls label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.promo-slider__controls label:active {
+  background-color: #ffffff;
+}
 /*!
   * ===========================================================
   * PROMO CARDS
@@ -819,11 +992,16 @@ textarea {
   * ===========================================================
   */
 .product-item {
+  position: relative;
   margin-top: 20px;
   width: 267px;
 }
+.product-item:hover .product-item__hover-wrap {
+  display: block;
+}
 .product-item__preview {
   position: relative;
+  z-index: 200;
 }
 .product-item__preview--hit::before {
   content: "";
@@ -861,21 +1039,50 @@ textarea {
   font-weight: 700;
 }
 .product-item__desc {
+  position: relative;
   margin: 15px 0px;
   margin-bottom: 17px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: normal;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
+          text-decoration-color: rgba(255, 255, 255, 0.2);
+  z-index: 200;
+}
+.product-item__link {
+  color: #ffffff;
   text-align: center;
   text-decoration: underline;
   -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
           text-decoration-color: rgba(255, 255, 255, 0.2);
 }
+.product-item__link:hover {
+  color: #ffbc9e;
+  -webkit-text-decoration-color: rgba(249, 172, 159, 0.3);
+          text-decoration-color: rgba(249, 172, 159, 0.3);
+}
+.product-item__link:active {
+  color: #ffbc9e;
+  -webkit-text-decoration-color: rgba(249, 172, 159, 0.3);
+          text-decoration-color: rgba(249, 172, 159, 0.3);
+}
 .product-item__hover-wrap {
   display: none;
+  position: absolute;
+  top: -6px;
+  left: -13px;
+  padding-top: 339px;
+  width: 293px;
+  height: 66px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  border-radius: 5px;
+  z-index: 100;
 }
-.product-item__hover-wrap--hidden {
-  display: none;
+.product-item__hover-wrap:hover {
+  display: block;
 }
 /*!
   * ===========================================================
@@ -1005,6 +1212,16 @@ textarea {
   line-height: 30px;
   font-weight: 700;
   color: #323232;
+}
+.blog-widjet__link:hover {
+  color: #e84d37;
+  -webkit-text-decoration-color: rgba(236, 89, 60, 0.3);
+          text-decoration-color: rgba(236, 89, 60, 0.3);
+}
+.blog-widjet__link:active {
+  color: #e84d37;
+  -webkit-text-decoration-color: rgba(236, 89, 60, 0.3);
+          text-decoration-color: rgba(236, 89, 60, 0.3);
 }
 /*!
   * ===========================================================
@@ -1194,6 +1411,16 @@ textarea {
   -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
           text-decoration-color: rgba(255, 255, 255, 0.2);
 }
+.page-footer__nav-link:hover {
+  color: #ffbc9e;
+  -webkit-text-decoration-color: rgba(249, 172, 159, 0.3);
+          text-decoration-color: rgba(249, 172, 159, 0.3);
+}
+.page-footer__nav-link:active {
+  color: #ffbc9e;
+  -webkit-text-decoration-color: rgba(249, 172, 159, 0.3);
+          text-decoration-color: rgba(249, 172, 159, 0.3);
+}
 .page-footer__copyright-label {
   font-size: 12px;
   line-height: 18px;
@@ -1204,6 +1431,16 @@ textarea {
   text-decoration: underline;
   -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
           text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+.page-footer__copyright-link:hover {
+  color: #ffbc9e;
+  -webkit-text-decoration-color: rgba(249, 172, 159, 0.3);
+          text-decoration-color: rgba(249, 172, 159, 0.3);
+}
+.page-footer__copyright-link:active {
+  color: #ffbc9e;
+  -webkit-text-decoration-color: rgba(249, 172, 159, 0.3);
+          text-decoration-color: rgba(249, 172, 159, 0.3);
 }
 /*!
   * ===========================================================
@@ -1321,7 +1558,6 @@ textarea {
   display: block;
 }
 .modal-dialog__title {
-  margin-bottom: 20px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
