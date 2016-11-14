@@ -1012,15 +1012,14 @@ textarea::placeholder {
   background-image: url('../img/select-marker.png');
   background-repeat: no-repeat;
   background-position: 92% center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
 }
 .filter-form__sort option {
   margin: 0px;
   padding-top: 2px;
   padding-bottom: 6px;
-  padding-left: 20px;
-  padding-right: 45px;
-  width: 127px;
-  height: 10px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -1029,9 +1028,15 @@ textarea::placeholder {
   background: #ffffff;
 }
 .filter-form__sort:hover {
+  font-weight: 500;
   color: #323232;
   background-color: #ffffff;
   background-image: url('../img/select-marker-black.png');
+}
+.filter-form__sort:hover option {
+  font-weight: 500;
+  color: #323232;
+  background-color: #ffffff;
 }
 .filter-form__price-range {
   display: flex;
