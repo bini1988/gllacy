@@ -1820,10 +1820,10 @@ textarea::placeholder {
 }
 /*!
   * ===========================================================
-  * MODAL DIALOG
+  * MODAL CONTENT
   * ===========================================================
   */
-.modal-dialog {
+.modal-content {
   display: none;
   position: fixed;
   top: 50%;
@@ -1837,16 +1837,20 @@ textarea::placeholder {
   z-index: 500;
   transform: translate(-50%, -50%);
 }
-.modal-dialog--show {
+.modal-content--show {
   display: block;
 }
-.modal-dialog__title {
+.modal-content--show-zoomin {
+  display: block;
+  animation: zoomin 0.5s;
+}
+.modal-content__title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
   color: #323232;
 }
-.modal-dialog__btn-close {
+.modal-content__btn-close {
   position: absolute;
   top: 12px;
   right: 5px;
@@ -1858,8 +1862,8 @@ textarea::placeholder {
   outline: none;
   cursor: pointer;
 }
-.modal-dialog__btn-close::before,
-.modal-dialog__btn-close::after {
+.modal-content__btn-close::before,
+.modal-content__btn-close::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -1869,12 +1873,21 @@ textarea::placeholder {
   background-color: #000000;
   border-radius: 2px;
 }
-.modal-dialog__btn-close::before {
+.modal-content__btn-close::before {
   transform: rotate(45deg);
 }
-.modal-dialog__btn-close::after {
+.modal-content__btn-close::after {
   transform: rotate(-45deg);
 }
-.modal-dialog__content {
+.modal-content__content-wrap {
   text-align: right;
+}
+@keyframes zoomin {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
 }

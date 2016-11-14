@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -251,7 +252,7 @@
               <b>8 812 450-25-25</b>
               <br> (с 10 до 20 ежедневно)
             </p>
-            <a class="btn" href="/">Форма обратной связи</a>
+            <a class="btn  contacts__btn-feedback" href="/feedback.html">Форма обратной связи</a>
           </div>
         </section>
       </main>
@@ -308,12 +309,12 @@
       </footer>
     </div>
     <div class="overlay"></div>
-    <div class="modal-dialog  modal-dialog--subscribe">
-      <div class="modal-dialog__title">
+    <div class="modal-content  modal-content--feedback">
+      <div class="modal-content__title">
         Мы обязательно вам ответим!
       </div>
-      <button class="modal-dialog__btn-close" type="button" title="Закрыть">Закрыть</button>
-      <div class="modal-dialog__content">
+      <button class="modal-content__btn-close" type="button" title="Закрыть">Закрыть</button>
+      <div class="modal-content__content-wrap">
         <form class="feedback-form" id="feedback-form" action="/" method="post">
           <div class="input-wrap">
             <input id="user-name" type="text" name="user-name" placeholder="Как вас зовут?" required>
@@ -332,6 +333,7 @@
       </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
