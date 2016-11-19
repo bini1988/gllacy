@@ -1016,10 +1016,11 @@ textarea::placeholder {
 }
 .filter-form__sort {
   display: block;
+  position: relative;
   margin: 0px;
   padding: 0px;
   padding-left: 13px;
-  padding-right: 45px;
+  padding-right: 25px;
   width: 192px;
   height: 36px;
   font-size: 16px;
@@ -1037,6 +1038,9 @@ textarea::placeholder {
   -webkit-appearance: none;
   -moz-appearance: none;
   outline: none;
+}
+.filter-form__sort::-ms-expand {
+  display: none;
 }
 .filter-form__sort option {
   margin: 0px;
@@ -1431,25 +1435,25 @@ textarea::placeholder {
   width: 49px;
   height: 49px;
   top: 0px;
-  left: 10px;
+  left: 12px;
   background-color: transparent;
-  background-position: 50% 50%;
+  background-image: url('../img/about-icons.png');
   background-repeat: no-repeat;
 }
 .about-shop__item:nth-child(odd)::before {
   left: 20px;
 }
 .about-shop__item--icecream::before {
-  background-image: url('../img/ice-cream-icon.png');
+  background-position: 0 0;
 }
 .about-shop__item--leaf::before {
-  background-image: url('../img/leaf-icon.png');
+  background-position: -147px 0;
 }
 .about-shop__item--cow::before {
-  background-image: url('../img/cow-icon.png');
+  background-position: -49px 0;
 }
 .about-shop__item--temp::before {
-  background-image: url('../img/temp-icon.png');
+  background-position: -98px 0;
 }
 /*!
   * ===========================================================
@@ -1804,21 +1808,21 @@ textarea::placeholder {
   font-size: 0px;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-image: url('../img/social-icons.png');
   border-radius: 50%;
   opacity: 0.8;
 }
 .social-links__icon--tw {
-  background-image: url('../img/twitter-icon.png');
+  background-position: -1px 0;
 }
 .social-links__icon--inst {
-  background-image: url('../img/intagram-icon.png');
+  background-position: -33px 0;
 }
 .social-links__icon--fb {
-  background-image: url('../img/facebook-icon.png');
+  background-position: -65px 0;
 }
 .social-links__icon--vk {
-  background-image: url('../img/vk-icon.png');
+  background-position: -97px 0;
 }
 /*!
   * ===========================================================

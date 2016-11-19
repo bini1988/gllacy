@@ -7,11 +7,6 @@ var body = document.querySelector('body');
 body.classList.remove('nojs');
 
 /**
-  * Яндекс карта
-  */
-
-
-/**
   * Форма обратной ствязи
   */
 var contactsFeedbackBtn = document.querySelector('.contacts__btn-feedback');
