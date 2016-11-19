@@ -1414,7 +1414,7 @@ textarea::placeholder {
   flex-basis: 50%;
   box-sizing: border-box;
   padding: 11px;
-  padding-left: 70px;
+  padding-left: 68px;
   padding-right: 21px;
   font-size: 16px;
   line-height: 22px;
@@ -1431,7 +1431,7 @@ textarea::placeholder {
   width: 49px;
   height: 49px;
   top: 0px;
-  left: 12px;
+  left: 10px;
   background-color: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
