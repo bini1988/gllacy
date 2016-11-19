@@ -1695,7 +1695,7 @@ textarea::placeholder {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
-  padding-right: 15px;
+  padding-right: 14px;
 }
 .page-footer__nav-items {
   margin: 0;
@@ -1725,7 +1725,7 @@ textarea::placeholder {
 }
 .page-footer__link {
   font-size: 13px;
-  line-height: 18px;
+  line-height: 16px;
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
@@ -1749,6 +1749,9 @@ textarea::placeholder {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+}
+.page-footer__copyright-label .page-footer__link {
+  font-size: 12px;
 }
 /*!
   * ===========================================================
