@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="nojs">
   <input id="btn-1" type="radio" class="promo-slider__toggle" name="promo-slider__toggle" checked>
   <input id="btn-2" type="radio" class="promo-slider__toggle" name="promo-slider__toggle">
   <input id="btn-3" type="radio" class="promo-slider__toggle" name="promo-slider__toggle">
@@ -22,14 +22,16 @@
         <nav class="main-nav">
           <ul class="main-nav__items">
             <li class="main-nav__item">
-              <a href="/catalog.html" class="main-nav__link">Каталог</a>
+              <a href="#" class="main-nav__link">
+                <span class="main-nav__link-content">Каталог</span>
+              </a>
               <div class="main-nav__popup-wrap">
                 <ul class="main-nav__popup">
                   <li class="main-nav__popup-item">
                     <a class="main-nav__popup-link  main-nav__popup-link--title">Новинки</a>
                   </li>
                   <li class="main-nav__popup-item">
-                    <a href="/" class="main-nav__popup-link">Сливочное</a>
+                    <a href="catalog.html" class="main-nav__popup-link">Сливочное</a>
                   </li>
                   <li class="main-nav__popup-item">
                     <a href="#" class="main-nav__popup-link">Щербеты</a>
@@ -44,10 +46,14 @@
               </div>
             </li>
             <li class="main-nav__item">
-              <a href="/" class="main-nav__link">Доставка и оплата</a>
+              <a href="#" class="main-nav__link">
+                <span class="main-nav__link-content">Доставка и оплата</span>
+              </a>
             </li>
             <li class="main-nav__item">
-              <a href="/" class="main-nav__link">О Компании</a>
+              <a href="#" class="main-nav__link">
+                <span class="main-nav__link-content">О Компании</span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -67,9 +73,13 @@
                 <input type="email" name="email" placeholder="Электронная почта">
                 <input type="password" name="password" placeholder="Пароль">
                 <input class="btn" type="submit" value="Войти">
-                <div class="login-form__link-items">
-                  <a class="login-form__link-item" href="#">Забыли пароль?</a>
-                  <a class="login-form__link-item" href="#">Новая регистрация</a>
+                <div class="login-form__links">
+                  <a class="login-form__link" href="#">
+                    <span class="login-form__link-content">Забыли пароль?</span>
+                  </a>
+                  <a class="login-form__link" href="#">
+                    <span class="login-form__link-content">Новая регистрация</span>
+                  </a>
                 </div>
               </form>
             </div>
@@ -138,9 +148,11 @@
                 </div>
               </div>
               <div class="product-item__desc">
-                <a href="#" class="product-item__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                <a href="#" class="product-item__link">
+                  <span class="product-item__link-content">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                </a>
               </div>
-              <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
+              <div class="product-item__hover-wrap">
                 <button class="btn  product-item__btn">Быстрый просмотр</button>
               </div>
             </div>
@@ -155,9 +167,11 @@
                 </div>
               </div>
               <div class="product-item__desc">
-                <a href="#" class="product-item__link">Сливочно-кофейное с кусочками шоколада</a>
+                <a href="#" class="product-item__link">
+                  <span class="product-item__link-content">Сливочно-кофейное с кусочками шоколада</span>
+                </a>
               </div>
-              <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
+              <div class="product-item__hover-wrap">
                 <button class="btn  product-item__btn">Быстрый просмотр</button>
               </div>
             </div>
@@ -172,9 +186,11 @@
                 </div>
               </div>
               <div class="product-item__desc">
-                <a href="#" class="product-item__link">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                <a href="#" class="product-item__link">
+                  <span class="product-item__link-content">Сливочно-клубничное с присыпкой из белого шоколада</span>
+                </a>
               </div>
-              <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
+              <div class="product-item__hover-wrap">
                 <button class="btn  product-item__btn">Быстрый просмотр</button>
               </div>
             </div>
@@ -189,9 +205,11 @@
                 </div>
               </div>
               <div class="product-item__desc">
-                <a href="#" class="product-item__link">Сливочное крем-брюле с карамельной подливкой</a>
+                <a href="#" class="product-item__link">
+                  <span class="product-item__link-content">Сливочное крем-брюле с карамельной подливкой</span>
+                </a>
               </div>
-              <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
+              <div class="product-item__hover-wrap">
                 <button class="btn  product-item__btn">Быстрый просмотр</button>
               </div>
             </div>
@@ -217,29 +235,29 @@
               <div class="blog-widjet">
                 <h3 class="blog-widjet__title">Новое в нашем блоге</h3>
                 <div class="blog-widjet__content">
-                  <a class="blog-widjet__link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+                  <a class="blog-widjet__link" href="#">
+                    <span class="blog-widjet__link-content">10  способов сервировки фруктовых щербетов к столу</span></a>
                 </div>
               </div>
             </div>
             <div class="widgets__item">
               <div class="subscribe-widjet">
-                <div class="subscribe-widjet__wrap">
-                  <form class="subscribe-widjet__form" id="subscribe-form" action="/" method="get">
-                    <div class="subscribe-widjet__content">
-                      Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
-                    </div>
-                    <input type="email" name="subscribe-email" placeholder="Электронная почта" required>
-                    <input class="btn  btn--tiny" type="submit" value="Отправить">
-                  </form>
-                </div>
+                <form class="subscribe-widjet__form" id="subscribe-form" action="/" method="get">
+                  <div class="subscribe-widjet__content">
+                    Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+                  </div>
+                  <input type="email" name="subscribe-email" placeholder="Электронная почта" required>
+                  <input class="btn  btn--tiny" type="submit" value="Отправить">
+                </form>
               </div>
             </div>
           </div>
         </section>
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <div class="contacts__map-wrap  contacts__map-wrap--mark">
+          <div class="contacts__map-wrap">
             <img class="contacts__map" src="img/road-map.jpg" width="1200" height="430" alt="Ма на карте">
+            <div id="yandex-map" class="contacts__map contacts__map--yandex"></div>
           </div>
           <div class="contacts__address">
             <p>Адрес главного офиса и
@@ -282,20 +300,28 @@
           <div class="page-footer__nav-col">
             <ul class="page-footer__nav-items">
               <li class="page-footer__nav-item  page-footer__nav-item--like">
-                <a class="page-footer__nav-link" href="#">Для поставщиков</a>
+                <a class="page-footer__link" href="#">
+                  <span class="page-footer__link-content">Для поставщиков</span>
+                </a>
               </li>
               <li class="page-footer__nav-item">
-                <a class="page-footer__nav-link" href="#">О производстве</a>
+                <a class="page-footer__link" href="#">
+                  <span class="page-footer__link-content">О производстве</span>
+                </a>
               </li>
             </ul>
           </div>
           <div class="page-footer__nav-col">
             <ul class="page-footer__nav-items">
               <li class="page-footer__nav-item">
-                <a class="page-footer__nav-link" href="#">Наши документы</a>
+                <a class="page-footer__link" href="#">
+                  <span class="page-footer__link-content">Наши документы</span>
+                </a>
               </li>
               <li class="page-footer__nav-item">
-                <a class="page-footer__nav-link" href="#">Экологические стандарты</a>
+                <a class="page-footer__link" href="#">
+                  <span class="page-footer__link-content">Экологические стандарты</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -303,7 +329,10 @@
         <div class="page-footer__copyright">
           <img class="page-footer__copyright-logo" src="img/htmacademy-logo.png" width="108" height="38" alt="HTML Academy">
           <div class="page-footer__copyright-label">
-            Сделано в <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a> © 2016
+            Сделано в
+            <a class="page-footer__link" href="https://htmlacademy.ru">
+              <span class="page-footer__link-content">HTML Academy</span>
+            </a> © 2016
           </div>
         </div>
       </footer>
@@ -333,6 +362,7 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=u-TmgPMIkJufk4YcZJWSAvN0k2UgaezH&amp;id=yandex-map&amp;width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
   <script src="js/script.js"></script>
 </body>
 

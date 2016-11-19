@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="nojs">
   <div class="page-wrapper">
     <div class="content-wrapper">
       <header class="page-header">
@@ -21,11 +21,13 @@
         <nav class="main-nav">
           <ul class="main-nav__items">
             <li class="main-nav__item  main-nav__item--active">
-              <a href="/catalog.html" class="main-nav__link">Каталог</a>
+              <a href="/catalog.html" class="main-nav__link">
+                <span class="main-nav__link-content">Каталог</span>
+              </a>
               <div class="main-nav__popup-wrap">
                 <ul class="main-nav__popup">
                   <li class="main-nav__popup-item">
-                    <a href="/" class="main-nav__popup-link  main-nav__popup-link--title">Новинки</a>
+                    <a class="main-nav__popup-link  main-nav__popup-link--title">Новинки</a>
                   </li>
                   <li class="main-nav__popup-item">
                     <a href="catalog.html" class="main-nav__popup-link">Сливочное</a>
@@ -43,10 +45,14 @@
               </div>
             </li>
             <li class="main-nav__item">
-              <a href="/" class="main-nav__link">Доставка и оплата</a>
+              <a href="#" class="main-nav__link">
+                <span class="main-nav__link-content">Доставка и оплата</span>
+              </a>
             </li>
             <li class="main-nav__item">
-              <a href="/" class="main-nav__link">О Компании</a>
+              <a href="#" class="main-nav__link">
+                <span class="main-nav__link-content">О Компании</span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -66,9 +72,13 @@
                 <input type="email" name="email" placeholder="Электронная почта">
                 <input type="password" name="password" placeholder="Пароль">
                 <input class="btn" type="submit" value="Войти">
-                <div class="login-form__link-items">
-                  <a class="login-form__link-item" href="#">Забыли пароль?</a>
-                  <a class="login-form__link-item" href="#">Новая регистрация</a>
+                <div class="login-form__links">
+                  <a class="login-form__link" href="#">
+                    <span class="login-form__link-content">Забыли пароль?</span>
+                  </a>
+                  <a class="login-form__link" href="#">
+                    <span class="login-form__link-content">Новая регистрация</span>
+                  </a>
                 </div>
               </form>
             </div>
@@ -137,13 +147,19 @@
         <div class="breadcrumbs">
           <ul class="breadcrumbs__items">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="/index.html">Главная</a>
+              <a class="breadcrumbs__link" href="/index.html">
+                <span class="breadcrumbs__link-content">Главная</span>
+              </a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Каталог</a>
+              <a class="breadcrumbs__link" href="#">
+                <span class="breadcrumbs__link-content">Каталог</span>
+              </a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Сливочное</a>
+              <a class="breadcrumbs__link  breadcrumbs__link--active">
+                <span class="breadcrumbs__link-content">Сливочное</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -169,7 +185,7 @@
                   <output class="catalog__upper-cost" name="upper-cost">500 руб.</output>
                 </span>
                 </legend>
-                <div class="filter-form__price-range  filter-form__price-range--nojs!">
+                <div class="filter-form__price-range">
                   От
                   <input type="text" name="min-price" value="100" pattern="[0-9]*"> до
                   <input type="text" name="max-price" value="500" pattern="[0-9]*">
@@ -259,7 +275,7 @@
             </form>
           </section>
           <section class="catalog__list">
-            <h3 class="visually-hidden">Найденые позиции:</h3>
+            <h3 class="visually-hidden">Найденные позиции:</h3>
             <div class="catalog__list-items">
               <div class="product-item">
                 <div class="product-item__preview">
@@ -272,7 +288,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -289,7 +307,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочно-кофейное с кусочками шоколада</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочно-кофейное с кусочками шоколада</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -306,7 +326,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочно-клубничное с присыпкой из белого шоколада</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -323,7 +345,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочное крем-брюле с карамельной подливкой</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочное крем-брюле с карамельной подливкой</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -340,7 +364,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочное с брусничным джемом</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочное с брусничным джемом</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -357,7 +383,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочно-черничное с цельными ягодами черники</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочно-черничное с цельными ягодами черники</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -374,7 +402,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочно-лимонное с карамельной присыпкой</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочно-лимонное с карамельной присыпкой</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -391,7 +421,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочное с шоколадной стружкой</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочное с шоколадной стружкой</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -408,7 +440,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочно-ванильное с кусочками шоколада</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочно-ванильное с кусочками шоколада</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -425,7 +459,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочноe с ментоловым сиропом</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочноe с ментоловым сиропом</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -442,7 +478,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочное с кусочками черного шоколада</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочное с кусочками черного шоколада</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -459,7 +497,9 @@
                   </div>
                 </div>
                 <div class="product-item__desc">
-                  <a href="#" class="product-item__link">Сливочное с мятным сиропом</a>
+                  <a href="#" class="product-item__link">
+                    <span class="product-item__link-content">Сливочное с мятным сиропом</span>
+                  </a>
                 </div>
                 <div class="product-item__hover-wrap  product-item__hover-wrap--hidden">
                   <button class="btn  product-item__btn">Быстрый просмотр</button>
@@ -504,20 +544,28 @@
           <div class="page-footer__nav-col">
             <ul class="page-footer__nav-items">
               <li class="page-footer__nav-item  page-footer__nav-item--like">
-                <a class="page-footer__nav-link" href="#">Для поставщиков</a>
+                <a class="page-footer__link" href="#">
+                  <span class="page-footer__link-content">Для поставщиков</span>
+                </a>
               </li>
               <li class="page-footer__nav-item">
-                <a class="page-footer__nav-link" href="#">О производстве</a>
+                <a class="page-footer__link" href="#">
+                  <span class="page-footer__link-content">О производстве</span>
+                </a>
               </li>
             </ul>
           </div>
           <div class="page-footer__nav-col">
             <ul class="page-footer__nav-items">
               <li class="page-footer__nav-item">
-                <a class="page-footer__nav-link" href="#">Наши документы</a>
+                <a class="page-footer__link" href="#">
+                  <span class="page-footer__link-content">Наши документы</span>
+                </a>
               </li>
               <li class="page-footer__nav-item">
-                <a class="page-footer__nav-link" href="#">Экологические стандарты</a>
+                <a class="page-footer__link" href="#">
+                  <span class="page-footer__link-content">Экологические стандарты</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -525,12 +573,16 @@
         <div class="page-footer__copyright">
           <img class="page-footer__copyright-logo" src="img/htmacademy-logo.png" width="108" height="38" alt="HTML Academy">
           <div class="page-footer__copyright-label">
-            Сделано в <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a> © 2016
+            Сделано в
+            <a class="page-footer__link" href="https://htmlacademy.ru">
+              <span class="page-footer__link-content">HTML Academy</span>
+            </a> © 2016
           </div>
         </div>
       </footer>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

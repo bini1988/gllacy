@@ -1,3 +1,15 @@
+/**
+  * Поддержка js
+  */
+
+var body = document.querySelector('body');
+
+body.classList.remove('nojs');
+
+/**
+  * Яндекс карта
+  */
+
 
 /**
   * Форма обратной ствязи
