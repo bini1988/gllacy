@@ -373,6 +373,7 @@ textarea::placeholder {
 .basket-table__btn {
   display: inline-block;
   vertical-align: top;
+  position: relative;
   width: 14px;
   height: 14px;
   font-size: 0px;
@@ -384,8 +385,18 @@ textarea::placeholder {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.basket-table__btn--remove {
-  background-image: url('../img/cross.svg');
+.basket-table__btn--remove::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  margin-top: -5.5px;
+  margin-left: -5.5px;
+  background-repeat: no-repeat;
+  background-position: -238px -19px;
+  background-image: url('../img/icons.png');
 }
 .basket-table__item--total {
   text-align: right;
@@ -719,6 +730,7 @@ textarea::placeholder {
   cursor: default;
 }
 .main-nav__popup-link--active {
+  color: #ffffff;
   background-color: #d07058;
   cursor: default;
 }
@@ -2013,8 +2025,8 @@ textarea::placeholder {
 }
 .modal-content__btn-close {
   position: absolute;
-  top: 12px;
-  right: 5px;
+  top: 8px;
+  right: 7px;
   width: 30px;
   height: 30px;
   font-size: 0px;
@@ -2023,22 +2035,18 @@ textarea::placeholder {
   outline: none;
   cursor: pointer;
 }
-.modal-content__btn-close::before,
-.modal-content__btn-close::after {
+.modal-content__btn-close::before {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 0px;
-  width: 25px;
-  height: 3px;
-  background-color: #000000;
-  border-radius: 2px;
-}
-.modal-content__btn-close::before {
-  transform: rotate(45deg);
-}
-.modal-content__btn-close::after {
-  transform: rotate(-45deg);
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  margin-left: -9px;
+  background-repeat: no-repeat;
+  background-position: -238px 0;
+  background-image: url('../img/icons.png');
 }
 .modal-content__content-wrap {
   text-align: right;
