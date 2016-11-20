@@ -27,7 +27,7 @@ var userNameSaved = localStorage.getItem('user-name');
 contactsFeedbackBtn.addEventListener('click', function(evt) {
   evt.preventDefault();
 
-  modalContentFeedback.classList.add('modal-content--show-zoomin');
+  modalContentFeedback.classList.add('modal-content--show-fadeout');
   overlay.classList.add('overlay--show');
 
   if (userNameSaved) {
@@ -42,7 +42,7 @@ contactsFeedbackBtn.addEventListener('click', function(evt) {
 modalContentFeedbackCloseBtn.addEventListener('click', function(evt) {
   evt.preventDefault();
 
-  modalContentFeedback.classList.remove('modal-content--show-zoomin');
+  modalContentFeedback.classList.remove('modal-content--show-fadeout');
   overlay.classList.remove('overlay--show');
 });
 
@@ -55,9 +55,9 @@ feedbackForm.addEventListener('submit', function(evt) {
 
 window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
-    if (modalContentFeedback.classList.contains('modal-content--show-zoomin')) {
+    if (modalContentFeedback.classList.contains('modal-content--show-fadeout')) {
 
-      modalContentFeedback.classList.remove('modal-content--show-zoomin');
+      modalContentFeedback.classList.remove('modal-content--show-fadeout');
       overlay.classList.remove('overlay--show');
     }
   }

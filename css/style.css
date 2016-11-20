@@ -24,29 +24,31 @@ input[type=password] {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  padding: 10px 15px;
+  padding: 9px 15px;
   margin: 0px;
   min-width: 239px;
+  height: 44px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
   font-weight: 700;
-  border: none;
+  border: 1px solid #d3d3d2;
   border-radius: 5px;
   background-color: #ffffff;
-  box-shadow: inset 0px 0px 0px 1px #d3d3d2;
   outline: none;
 }
 input[type=text]:hover,
 input[type=email]:hover,
 input[type=password]:hover {
-  box-shadow: inset 0px 0px 0px 2px #c7c6c5;
+  padding: 8px 14px;
+  border: 2px solid #c7c6c5;
 }
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus {
-  box-shadow: inset 0px 0px 0px 2px #8fbdec;
+  padding: 8px 14px;
+  border: 2px solid #8fbdec;
 }
 input[type=text]:focus::-webkit-input-placeholder,
 input[type=email]:focus::-webkit-input-placeholder,
@@ -102,6 +104,7 @@ input[type=password]::placeholder {
 }
 .input-wrap {
   position: relative;
+  box-sizing: border-box;
   padding-top: 20px;
   background-color: transparent;
 }
@@ -115,12 +118,14 @@ input[type=password]::placeholder {
 .input-wrap label {
   display: none;
   position: absolute;
-  padding: 3.5px 15px;
+  box-sizing: border-box;
+  padding: 0px 15px;
   top: 0px;
   left: 0px;
+  height: 20px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 11px;
-  line-height: 13px;
+  line-height: 20px;
   font-style: normal;
   font-weight: 400;
   color: #999999;
@@ -139,9 +144,8 @@ textarea {
   font-style: normal;
   font-weight: 700;
   resize: none;
-  border: none;
+  border: 1px solid #d3d3d2;
   border-radius: 5px;
-  box-shadow: inset 0px 0px 0px 1px #d3d3d2;
   outline: none;
 }
 textarea:focus + label {
@@ -152,10 +156,12 @@ textarea:valid + label {
   display: block;
 }
 textarea:hover {
-  box-shadow: inset 0px 0px 0px 2px #c7c6c5;
+  padding: 8px 14px;
+  border: 2px solid #c7c6c5;
 }
 textarea:focus {
-  box-shadow: inset 0px 0px 0px 2px #8fbdec;
+  padding: 8px 14px;
+  border: 2px solid #8fbdec;
 }
 textarea:focus::-webkit-input-placeholder {
   font-size: 0px;
@@ -366,6 +372,7 @@ textarea::placeholder {
 }
 .basket-table__btn {
   display: inline-block;
+  vertical-align: top;
   width: 14px;
   height: 14px;
   font-size: 0px;
@@ -613,6 +620,7 @@ textarea::placeholder {
 }
 .main-nav__link {
   display: inline-block;
+  vertical-align: top;
   padding: 6px 14px;
   padding-bottom: 8px;
   font-size: 16px;
@@ -718,6 +726,7 @@ textarea::placeholder {
 }
 .breadcrumbs__item {
   display: inline-block;
+  vertical-align: top;
   position: relative;
 }
 .breadcrumbs__item:nth-child(n + 2) {
@@ -865,10 +874,10 @@ textarea::placeholder {
 }
 .promo-slider__controls label {
   display: inline-block;
+  vertical-align: top;
   margin-right: 9px;
   width: 17px;
   height: 17px;
-  vertical-align: top;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -902,11 +911,12 @@ textarea::placeholder {
   box-sizing: border-box;
   flex-grow: 0;
   flex-shrink: 1;
-  flex-basis: 48.8656%;
+  flex-basis: auto;
   margin: 0px;
   margin-bottom: 20px;
   padding: 15px 20px;
   padding-bottom: 23px;
+  width: 48.8656%;
   background-color: #849d8f;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1070,6 +1080,7 @@ textarea::placeholder {
 }
 .nojs .filter-form__price-range input[type=text] {
   display: inline-block;
+  vertical-align: top;
 }
 .nojs .filter-form__price-control {
   display: none;
@@ -1234,6 +1245,7 @@ textarea::placeholder {
 }
 .filter-form__btn {
   display: inline-block;
+  vertical-align: top;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -1415,11 +1427,12 @@ textarea::placeholder {
   position: relative;
   flex-grow: 0;
   flex-shrink: 1;
-  flex-basis: 50%;
+  flex-basis: auto;
   box-sizing: border-box;
   padding: 11px;
   padding-left: 68px;
   padding-right: 21px;
+  width: 50%;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -1508,7 +1521,7 @@ textarea::placeholder {
   font-weight: 500;
 }
 .blog-widjet__content {
-  width: 285px;
+  width: 290px;
 }
 .blog-widjet__link {
   position: relative;
@@ -1533,10 +1546,6 @@ textarea::placeholder {
   * ===========================================================
   */
 .subscribe-widjet {
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-wrap: wrap;
   box-sizing: border-box;
   padding: 5px;
   min-height: 220px;
@@ -1550,9 +1559,6 @@ textarea::placeholder {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
   box-sizing: border-box;
   padding: 28px 20px;
   padding-bottom: 35px;
@@ -1567,7 +1573,7 @@ textarea::placeholder {
   flex-basis: auto;
   align-self: flex-end;
   margin-bottom: 0px;
-  margin-right: 13px;
+  margin-right: 12px;
   min-width: 210px;
   height: 44px;
 }
@@ -1584,6 +1590,7 @@ textarea::placeholder {
   flex-shrink: 1;
   flex-basis: auto;
   align-self: flex-start;
+  min-height: 88px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -1898,12 +1905,14 @@ textarea::placeholder {
 .modal-content {
   display: none;
   position: fixed;
+  box-sizing: border-box;
   top: 50%;
   left: 50%;
   margin: 0 auto;
   padding: 15px 25px;
   padding-bottom: 27px;
-  width: 427px;
+  width: 477px;
+  min-height: 441px;
   background-color: #f8f7f4;
   border-radius: 10px;
   z-index: 500;
@@ -1915,6 +1924,14 @@ textarea::placeholder {
 .modal-content--show-zoomin {
   display: block;
   animation: zoomin 0.5s;
+}
+.modal-content--show-flipin {
+  display: block;
+  animation: flipin 0.5s;
+}
+.modal-content--show-fadeout {
+  display: block;
+  animation: fadeout 0.5s;
 }
 .modal-content__title {
   font-size: 24px;
@@ -1960,6 +1977,24 @@ textarea::placeholder {
     transform: scale3d(0.3, 0.3, 0.3);
   }
   50% {
+    opacity: 1;
+  }
+}
+@keyframes flipin {
+  from {
+    opacity: 0;
+    transform: translate(-100%, -100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }
