@@ -281,7 +281,11 @@ textarea::placeholder {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px #ac1000;
 }
-
+/*!
+  * ===========================================================
+  * LOGIN FORM
+  * ===========================================================
+  */
 .login-form {
   display: block;
   padding: 20px 18px;
@@ -325,7 +329,11 @@ textarea::placeholder {
 .login-form__link-content {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-
+/*!
+  * ===========================================================
+  * FEEDBACK FORM
+  * ===========================================================
+  */
 .feedback-form {
   font-size: 16px;
   line-height: 24px;
@@ -339,7 +347,11 @@ textarea::placeholder {
   display: block;
   min-width: 267px;
 }
-
+/*!
+  * ===========================================================
+  * BASKET TABLE
+  * ===========================================================
+  */
 .basket-table {
   padding: 15px 10px;
   padding-bottom: 18px;
@@ -427,7 +439,11 @@ textarea::placeholder {
   font-weight: bold;
   border-top: 1px solid #cacac7;
 }
-
+/*!
+  * ===========================================================
+  * PAGE HEADER
+  * ===========================================================
+  */
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -618,7 +634,11 @@ textarea::placeholder {
   line-height: 24px;
   font-weight: 700;
 }
-
+/*!
+  * ===========================================================
+  * MAIN NAVIGATION
+  * ===========================================================
+  */
 .main-nav {
   padding: 5px 16px;
   font-size: 16px;
@@ -657,21 +677,18 @@ textarea::placeholder {
 }
 .main-nav__item:hover .main-nav__link {
   color: #323232;
-}
-.main-nav__item:hover .main-nav__link-content {
-  border: none;
+  text-decoration: none;
 }
 .main-nav__item:hover .main-nav__popup-wrap {
   visibility: visible;
 }
 .main-nav__item--active {
-  text-decoration: none;
   background-color: #d07058;
   border-radius: 16px;
   color: #ffffff;
 }
-.main-nav__item--active .main-nav__link-content {
-  border: none;
+.main-nav__item--active .main-nav__link {
+  text-decoration: none;
 }
 .main-nav__link {
   display: inline-block;
@@ -681,7 +698,9 @@ textarea::placeholder {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(255, 255, 255, 0.3);
+          text-decoration-color: rgba(255, 255, 255, 0.3);
   text-align: center;
   color: #ffffff;
 }
@@ -690,12 +709,7 @@ textarea::placeholder {
   background-color: #f7f6f3;
   border-radius: 16px;
   box-shadow: inset 0 2px 2px #696969;
-}
-.main-nav__link:active .main-nav__link-content {
-  border: none;
-}
-.main-nav__link-content {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
 }
 .main-nav__popup-wrap {
   position: absolute;
@@ -755,13 +769,21 @@ textarea::placeholder {
 .main-nav__popup-link:not(.main-nav__popup-link--title):not(.main-nav__popup-link--active):active {
   background-color: #f6b5a5;
 }
-
+/*!
+  * ===========================================================
+  * PAGE CONTENT
+  * ===========================================================
+  */
 .page-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
 }
-
+/*!
+  * ===========================================================
+  * BREADCRUMBS
+  * ===========================================================
+  */
 .breadcrumbs {
   margin: 10px 2.3%;
   margin-right: 250px;
@@ -814,7 +836,11 @@ textarea::placeholder {
 .breadcrumbs__link-content {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
+/*!
+  * ===========================================================
+  * CATALOG
+  * ===========================================================
+  */
 .catalog {
   margin: 0px 2.3%;
   padding: 0px;
@@ -863,7 +889,11 @@ textarea::placeholder {
   -ms-flex-preferred-size: 23.2984%;
       flex-basis: 23.2984%;
 }
-
+/*!
+  * ===========================================================
+  * PROMO SLIDER
+  * ===========================================================
+  */
 .promo-slider {
   position: relative;
   padding-top: 310px;
@@ -944,7 +974,11 @@ textarea::placeholder {
 .promo-slider__controls label:active {
   background-color: #ffffff;
 }
-
+/*!
+  * ===========================================================
+  * PROMO CARDS
+  * ===========================================================
+  */
 .promo-cards {
   padding: 0px 2.3%;
 }
@@ -1013,7 +1047,11 @@ textarea::placeholder {
   font-weight: 700;
   text-align: left;
 }
-
+/*!
+  * ===========================================================
+  * PROMO HITS
+  * ===========================================================
+  */
 .promo-hits {
   padding: 0px 2.3%;
 }
@@ -1043,7 +1081,11 @@ textarea::placeholder {
   -ms-flex-preferred-size: 23.2984%;
       flex-basis: 23.2984%;
 }
-
+/*!
+  * ===========================================================
+  * FILTER FORM
+  * ===========================================================
+  */
 .filter-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1219,9 +1261,11 @@ textarea::placeholder {
 .filter-form__range-toggle {
   position: absolute;
   top: 50%;
+  left: 50%;
   width: 22px;
   height: 22px;
   margin-top: -11px;
+  margin-left: -11px;
   background-color: #f8f7f4;
   cursor: pointer;
   outline: none;
@@ -1229,10 +1273,16 @@ textarea::placeholder {
   border-radius: 50%;
 }
 .filter-form__range-toggle--min {
-  left: 35px;
+  left: 45px;
 }
 .filter-form__range-toggle--max {
-  right: 65px;
+  left: 143px;
+}
+.filter-form__range-toggle:hover {
+  width: 24px;
+  height: 24px;
+  margin-top: -12px;
+  margin-left: -12px;
 }
 .filter-form__fatcontent {
   margin: 0;
@@ -1384,7 +1434,11 @@ textarea::placeholder {
   background-color: #eaeaea;
   box-shadow: inset 0px 2px 1px 0px #696969;
 }
-
+/*!
+  * ===========================================================
+  * PRODUCT ITEM
+  * ===========================================================
+  */
 .product-item {
   position: relative;
   margin-top: 18px;
@@ -1510,7 +1564,11 @@ textarea::placeholder {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+/*!
+  * ===========================================================
+  * ABOUT SHOP
+  * ===========================================================
+  */
 .about-shop {
   margin: 20px 2.3%;
   padding: 15px 0px;
@@ -1591,7 +1649,11 @@ textarea::placeholder {
 .about-shop__item--temp::before {
   background-position: -98px -42px;
 }
-
+/*!
+  * ===========================================================
+  * WIDJETS
+  * ===========================================================
+  */
 .widgets {
   padding: 20px 2.3%;
 }
@@ -1628,7 +1690,11 @@ textarea::placeholder {
   border-radius: 15px;
   overflow: hidden;
 }
-
+/*!
+  * ===========================================================
+  * BLOG WIDJET
+  * ===========================================================
+  */
 .blog-widjet {
   box-sizing: border-box;
   padding: 5px 20px;
@@ -1665,7 +1731,11 @@ textarea::placeholder {
 .blog-widjet__link-content {
   border-bottom: 2px solid #323232;
 }
-
+/*!
+  * ===========================================================
+  * SUBSCRIBE WIDJET
+  * ===========================================================
+  */
 .subscribe-widjet {
   box-sizing: border-box;
   padding: 5px;
@@ -1740,7 +1810,11 @@ textarea::placeholder {
   color: #5a5a5a;
   text-align: left;
 }
-
+/*!
+  * ===========================================================
+  * CONTACTS
+  * ===========================================================
+  */
 .contacts {
   position: relative;
   height: 430px;
@@ -1813,7 +1887,11 @@ textarea::placeholder {
   margin-top: 9px;
   width: 100%;
 }
-
+/*!
+  * ===========================================================
+  * PAGE FOOTER
+  * ===========================================================
+  */
 .page-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1936,7 +2014,11 @@ textarea::placeholder {
 .page-footer__copyright-label .page-footer__link {
   font-size: 12px;
 }
-
+/*!
+  * ===========================================================
+  * SOCIAL LINKS SECTION
+  * ===========================================================
+  */
 .social-links {
   margin: 5px 0px;
 }
@@ -2010,7 +2092,11 @@ textarea::placeholder {
 .social-links__item--vk::before {
   background-position: -190px 0;
 }
-
+/*!
+  * ===========================================================
+  * PAGINATOR
+  * ===========================================================
+  */
 .paginator {
   display: inline-block;
   margin: 0px;
@@ -2091,7 +2177,11 @@ textarea::placeholder {
   -webkit-filter: opacity(20%);
           filter: opacity(20%);
 }
-
+/*!
+  * ===========================================================
+  * MODAL CONTENT
+  * ===========================================================
+  */
 .modal-content {
   display: none;
   position: fixed;
