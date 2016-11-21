@@ -792,7 +792,7 @@ textarea::placeholder {
 .promo-slider {
   position: relative;
   padding-top: 310px;
-  padding-bottom: 41px;
+  padding-bottom: 40px;
 }
 .promo-slider input[type=radio] {
   display: none;
@@ -821,6 +821,10 @@ textarea::placeholder {
 #btn-3:checked ~ .page-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slider-slide-3.png");
+}
+.promo-slider__slides {
+  max-height: 215px;
+  overflow: hidden;
 }
 .promo-slider__slide {
   display: none;
@@ -1119,6 +1123,7 @@ textarea::placeholder {
   margin-top: -11px;
   background-color: #f8f7f4;
   cursor: pointer;
+  outline: none;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
