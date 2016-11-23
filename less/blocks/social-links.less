@@ -1,0 +1,88 @@
+/*!
+  * ===========================================================
+  * SOCIAL LINKS SECTION
+  * ===========================================================
+  */
+
+.social-links {
+  margin: 5px 0px;
+}
+
+.social-links__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 0px 0px;
+  width: 186px;
+}
+
+.social-links__item {
+  display: block;
+  position: relative;
+
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  margin: 0px 0px;
+  padding: 0px;
+
+  width: 30px;
+  height: 30px;
+
+  font-size: 0px;
+  text-align: center;
+
+  background-color: transparent;
+  border-radius: 19px;
+  border: 4px solid rgba(225, 225, 225, 0.5);
+
+  &:hover {
+    border: 4px solid rgba(225, 225, 225, 0.7);
+  }
+
+  &:hover::before {
+    opacity: 1.0;
+  }
+
+  &:active::before {
+    opacity: 0.8;
+    box-shadow: inset 0 2px 2px #888888;
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url('../img/icons.png');
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+
+  &--tw::before {
+    background-position: -94px 0;
+  }
+
+  &--inst::before {
+    background-position: -126px 0;
+  }
+
+  &--fb::before {
+    background-position: -158px 0;
+  }
+
+  &--vk::before {
+    background-position: -190px 0;
+  }
+}

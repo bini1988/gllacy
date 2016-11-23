@@ -1,0 +1,125 @@
+/*!
+  * ===========================================================
+  * PAGE FOOTER
+  * ===========================================================
+  */
+
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding: 18px 2.3%;
+
+  & .social-links {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+
+  & .page-footer__nav {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+
+  & .page-footer__copyright {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+}
+
+.page-footer__nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 6px;
+  max-width: 650px;
+}
+
+.page-footer__nav-col {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  padding-right: 14px;
+}
+
+.page-footer__nav-items {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.page-footer__nav-item {
+  position: relative;
+  box-sizing: border-box;
+
+  padding-left: 20px;
+
+  &--like {
+    font-weight: @font-w-bold;
+  }
+
+  &--like::before {
+    content: "";
+
+    display: block;
+    position: absolute;
+
+    top: 7px;
+    left: 0px;
+
+    width: 15px;
+    height: 13px;
+
+    background-color: transparent;
+    background-image: url('../img/icons.png');
+    background-repeat: no-repeat;
+    background-position: -59px -17px;
+  }
+}
+
+.page-footer__link {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: @font-w-regular;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  &:hover {
+    color: #ffbc9e;
+  }
+
+  &:hover .page-footer__link-content {
+    border-bottom: 1px solid rgba(249, 172, 159, 0.3);
+  }
+
+  &:active {
+    color: #ffbc9e;
+  }
+
+  &:active .page-footer__link-content {
+    border-bottom: 1px solid rgba(249, 172, 159, 0.3);
+  }
+}
+
+.page-footer__link-content {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.page-footer__copyright-label {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: @font-w-regular;
+
+  & .page-footer__link {
+      font-size: 12px;
+  }
+}

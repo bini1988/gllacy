@@ -1,0 +1,55 @@
+/*!
+  * ===========================================================
+  * BLOG WIDJET
+  * ===========================================================
+  */
+
+.blog-widjet {
+  box-sizing: border-box;
+
+  padding: 5px 20px;
+
+  min-height: 220px;
+
+  background-color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70% 30%;
+  background-image: url('../img/bg-ice-cream.jpg');
+}
+
+.blog-widjet__title {
+  margin-top: 16px;
+  margin-bottom: 4px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: @font-w-medium;
+}
+
+.blog-widjet__content {
+  width: 290px;
+}
+
+.blog-widjet__link {
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: @font-w-bold;
+
+  color: #323232;
+  text-decoration: none;
+
+  &:hover {
+    color: #e84d37;
+  }
+
+  &:hover .blog-widjet__link-content {
+    border-bottom: 2px solid rgba(236, 89, 60, 0.3);
+  }
+}
+
+.blog-widjet__link-content {
+
+  border-bottom: 2px solid #323232;
+}

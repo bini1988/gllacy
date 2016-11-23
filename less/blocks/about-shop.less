@@ -1,0 +1,99 @@
+/*!
+  * ===========================================================
+  * ABOUT SHOP
+  * ===========================================================
+  */
+
+.about-shop {
+  margin: 20px 2.3%;
+  padding: 15px 0px;
+
+  color: #323232;
+
+  background-color: #eee0c4;
+  background-image: url('../img/wafer-bg-pattern.jpg');
+  background-position: 15px 50%;
+  border-radius: 17px;
+
+  & h2 {
+    margin: 9px 20px;
+
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: @font-w-medium;
+  }
+}
+
+.about-shop__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0px;
+
+  list-style-type: none;
+}
+
+.about-shop__item {
+  position: relative;
+
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  box-sizing: border-box;
+
+  padding: 11px;
+  padding-left: 68px;
+  padding-right: 21px;
+
+  width: 50%;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: @font-w-regular;
+
+  &:nth-child(odd) {
+    padding-left: 75px;
+    padding-right: 10px;
+  }
+
+  &::before {
+    content: "";
+
+    display: block;
+    position: absolute;
+
+    width: 49px;
+    height: 49px;
+
+    top: 0px;
+    left: 12px;
+
+    background-color: transparent;
+    background-image: url('../img/icons.png');
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(odd)::before {
+    left: 20px;
+  }
+
+  &--icecream::before {
+    background-position: 0 -42px;
+  }
+
+  &--leaf::before {
+    background-position: -147px -42px;
+  }
+
+  &--cow::before {
+    background-position: -49px -42px;
+  }
+
+  &--temp::before {
+    background-position: -98px -42px;
+  }
+}

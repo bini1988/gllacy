@@ -7,6 +7,3 @@ Thumbs.db
 *.psd
 *.ai
 *.pdf
-package.json
-gulpfile.js
-less/

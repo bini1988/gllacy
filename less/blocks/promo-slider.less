@@ -1,0 +1,113 @@
+/*!
+  * ===========================================================
+  * PROMO SLIDER
+  * ===========================================================
+  */
+
+.promo-slider {
+  position: relative;
+  padding-top: 310px;
+  padding-bottom: 40px;
+
+  & input[type=radio] {
+    display: none;
+  }
+}
+
+.promo-slider__toggle {
+  display: none;
+}
+
+#btn-1:checked ~ .page-wrapper .promo-slider #promo-slide-1,
+#btn-2:checked ~ .page-wrapper .promo-slider #promo-slide-2,
+#btn-3:checked ~ .page-wrapper .promo-slider #promo-slide-3 {
+  display: block;
+}
+
+#btn-1:checked ~ .page-wrapper .promo-slider label[for="btn-1"],
+#btn-2:checked ~ .page-wrapper .promo-slider label[for="btn-2"],
+#btn-3:checked ~ .page-wrapper .promo-slider label[for="btn-3"] {
+  background-color: #ffffff;
+}
+
+#btn-1:checked ~ .page-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slider-slide-1.png");
+}
+
+#btn-2:checked ~ .page-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/slider-slide-2.png");
+}
+
+#btn-3:checked ~ .page-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/slider-slide-3.png");
+}
+
+.promo-slider__slides {
+  max-height: 215px;
+
+  overflow: hidden;
+}
+
+.promo-slider__slide {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+.promo-slider__slide-title {
+  display: block;
+
+  margin: 0px auto;
+  margin-bottom: 30px;
+
+  width: 675px;
+
+  font-size: 60px;
+  line-height: 60.35px;
+  font-weight: @font-w-bold;
+
+  text-align: center;
+
+  &--tiny {
+    width: 650px;
+  }
+}
+
+.promo-slider__controls {
+  position: absolute;
+  padding: 0px 2.3%;
+
+  bottom: 62px;
+  left: 0px;
+
+  font-size: 0px;
+
+  z-index: 120;
+
+  & label {
+    display: inline-block;
+    vertical-align: top;
+
+    margin-right: 9px;
+
+    width: 17px;
+    height: 17px;
+
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  & label:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  & label:active {
+    background-color: #ffffff;
+  }
+}
+

@@ -1,0 +1,83 @@
+/*!
+  * ===========================================================
+  * PROMO CARDS
+  * ===========================================================
+  */
+
+.promo-cards {
+  padding: 0px 2.3%;
+
+  & h2 {
+    display: block;
+    width: 100%;
+  }
+}
+
+.promo-cards__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.promo-cards__item {
+  box-sizing: border-box;
+
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  padding-bottom: 23px;
+
+  width: 48.8656%;
+
+  background-color: #849d8f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  border-radius: 15px;
+
+  &--razz {
+    background-color: #b22e56;
+    background-image: url('../img/bg-razz.jpg');
+  }
+
+  &--chocolate {
+    background-color: #84665d;
+    background-image: url('../img/bg-chocolate.jpg');
+  }
+}
+
+.promo-cards__item-content {
+
+
+  text-align: right;
+
+  & h3 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: @font-w-bold;
+
+    text-align: left;
+  }
+
+  & p {
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+    min-height: 66px;
+
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: @font-w-bold;
+
+    text-align: left;
+  }
+}

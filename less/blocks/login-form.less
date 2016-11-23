@@ -1,0 +1,65 @@
+/*!
+  * ===========================================================
+  * LOGIN FORM
+  * ===========================================================
+  */
+
+.login-form {
+  display: block;
+
+  padding: 20px 18px;
+  width: 239px;
+
+  font-size: 0px;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+  cursor: default;
+
+  & input[type=text],
+    input[type=password],
+    input[type=email] {
+
+    margin-bottom: 20px;
+  }
+}
+
+.login-form__links {
+  display: inline-block;
+  vertical-align: top;
+
+  padding-left: 15px;
+}
+
+.login-form__link {
+  display: block;
+
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: @font-w-regular;
+
+  color: #323232;
+  text-decoration: none;
+
+  &:hover {
+    color: #e84d37;
+  }
+
+  &:active {
+    color: #e84d37;
+  }
+
+  &:hover .login-form__link-content {
+    border-bottom: 1px solid rgba(236, 89, 60, 0.3);
+  }
+
+  &:active .login-form__link-content {
+    border-bottom: 1px solid rgba(236, 89, 60, 0.3);
+  }
+}
+
+.login-form__link-content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}

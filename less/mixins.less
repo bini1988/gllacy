@@ -1,0 +1,81 @@
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/**
+  * Выравнивает картинку по центру родительского блока
+  * Родитель: position: realtive;
+  */
+.img-center(@width, @height) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -@width / 2;
+  margin-top: -@height / 2;
+}
+
+/**
+  * Выравнивает по горизонтале картинку по центру родительского блока
+  * Родитель: position: realtive;
+  */
+.img-x-center(@width) {
+  position: absolute;
+  left: 50%;
+  margin-left: -@width / 2;
+}
+
+/**
+  * Выравнивает текст в родительском блоке по вертикале
+  *
+  */
+.text-vertical-align(@height) {
+  line-height: @height;
+  vertical-align: middle;
+}
+
+/**
+  * Выравнить блок по горизонтале
+  *
+  */
+.block-center(@width) {
+  width: @width;
+  margin: 0 auto;
+}
+
+/**
+  * Раскладка карточками
+  *
+  */
+.cards() {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/**
+  * Абсолютно спозиционированный элемент
+  *
+  */
+.absolute-top-left(@top: 0, @left: 0, @width: 0, @height: 0) {
+    position: absolute;
+
+    top: @top;
+    left: @left;
+
+    width: @width;
+    height: @height;
+}
+
+.absolute-top-right(@top: 0, @right: 0, @width: 0, @height: 0) {
+    position: absolute;
+
+    top: @top;
+    right: @right;
+
+    width: @width;
+    height: @height;
+}

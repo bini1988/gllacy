@@ -1,0 +1,102 @@
+/*!
+  * ===========================================================
+  * CONTACTS
+  * ===========================================================
+  */
+
+.contacts {
+  position: relative;
+
+  height: 430px;
+}
+
+.contacts__map-wrap {
+  position:  relative;
+
+  height: 430px;
+
+  overflow: hidden;
+
+  background-image: url('../img/road-map.jpg');
+  background-repeat: no-repeat;
+  background-position: 27% 0%;
+}
+
+.contacts__map {
+  position: absolute;
+  display: block;
+
+  top: 0px;
+  left: 50%;
+
+  width: 1200px;
+  height: 430px;
+
+  border: none;
+  frameborder: 0;
+  transform: translateX(-50%);
+}
+
+.nojs {
+
+  & .contacts__map--yandex {
+    display: none;
+  }
+}
+
+.contacts__address {
+  position: absolute;
+
+  top: 50%;
+  right: 0px;
+
+  padding: 28px 25px;
+  padding-bottom: 33px;
+
+  margin: 0px 2.3%;
+  width: 252px;
+
+  color: #323232;
+
+  background-color: #fffffe;
+  border-radius: 15px;
+  text-align: center;
+  transform: translateY(-50%);
+
+  & p {
+    margin-top: 0px;
+    margin-bottom: 14px;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: @font-w-regular;
+
+    text-align: left;
+  }
+
+  & strong {
+    display: inline-block;
+    margin: 2px 0px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: @font-w-bold;
+  }
+
+  & b {
+    display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 4px;
+
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: @font-w-bold;
+  }
+
+  & .btn {
+    box-sizing: border-box;
+    margin-top: 9px;
+
+    width: 100%;
+  }
+}
