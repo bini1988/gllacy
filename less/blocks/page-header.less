@@ -68,10 +68,6 @@
     visibility: visible;
   }
 
-  &::before {
-    background-image: url('../img/icons.png');
-  }
-
   &--search {
     padding: 0px;
     margin: 0px;
@@ -88,10 +84,7 @@
       top: 0px;
       left: 0px;
 
-      width: 17px;
-      height: 17px;
-
-      background-position: -42px -17px;
+      .sprite(@search-icon);
 
       transform: translate(50%, 50%);
     }
@@ -99,7 +92,7 @@
 
   &--search:hover {
     &::before {
-      background-position: -42px 0;
+      .sprite(@search-icon-hover);
     }
   }
 
@@ -114,16 +107,13 @@
       top: 5px;
       left: 15px;
 
-      width: 21px;
-      height: 19px;
-
-      background-position: -21px -19px;
+      .sprite(@enter-icon);
     }
   }
 
   &--login:hover {
     &::before {
-      background-position: -21px 0;
+      .sprite(@enter-icon-hover);
     }
   }
 
@@ -136,10 +126,7 @@
       top: 5px;
       left: 16px;
 
-      width: 21px;
-      height: 20px;
-
-      background-position: 0 -21px;
+      .sprite(@basket-icon);
     }
   }
 
@@ -162,10 +149,7 @@
       top: 6px;
       left: 15px;
 
-      width: 21px;
-      height: 20px;
-
-      background-position: 0 0;
+      .sprite(@basket-full-icon);
     }
   }
 }

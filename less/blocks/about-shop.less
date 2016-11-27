@@ -73,8 +73,6 @@
     left: 12px;
 
     background-color: transparent;
-    background-image: url('../img/icons.png');
-    background-repeat: no-repeat;
   }
 
   &:nth-child(odd)::before {
@@ -82,18 +80,18 @@
   }
 
   &--icecream::before {
-    background-position: 0 -42px;
+    .sprite(@ice-cream-icon);
   }
 
   &--leaf::before {
-    background-position: -147px -42px;
+    .sprite(@leaf-icon);
   }
 
   &--cow::before {
-    background-position: -49px -42px;
+    .sprite(@cow-icon);
   }
 
   &--temp::before {
-    background-position: -98px -42px;
+    .sprite(@temp-icon);
   }
 }

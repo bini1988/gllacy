@@ -57,32 +57,27 @@
 
     position: absolute;
 
-    top: 0px;
-    left: 0px;
+    top: 50%;
+    left: 50%;
 
-    width: 30px;
-    height: 30px;
-
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-image: url('../img/icons.png');
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     opacity: 0.8;
   }
 
   &--tw::before {
-    background-position: -94px 0;
+    .sprite(@twitter-icon);
   }
 
   &--inst::before {
-    background-position: -126px 0;
+    .sprite(@intagram-icon);
   }
 
   &--fb::before {
-    background-position: -158px 0;
+    .sprite(@facebook-icon);
   }
 
   &--vk::before {
-    background-position: -190px 0;
+    .sprite(@vk-icon);
   }
 }

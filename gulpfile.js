@@ -10,6 +10,7 @@ var minify = require('gulp-csso');
 var rename = require('gulp-rename');
 var server = require('browser-sync').create();
 var uglify = require("gulp-uglifyjs");
+var spritesmith = require('gulp.spritesmith');
 
 gulp.task('style', function() {
   return gulp.src('less/style.less')
@@ -48,4 +49,16 @@ gulp.task("scripts", function() {
     .pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("js"));
+});
+
+gulp.task('sprite', function() {
+
+  var sprite = gulp.src('img/sprite-icons/*.*')
+    .pipe(spritesmith({
+            imgName: '../img/sprite.png',
+            cssName: 'sprite.less'
+    }));
+
+    sprite.img.pipe(gulp.dest('img'));
+    sprite.css.pipe(gulp.dest('less/global'));
 });
