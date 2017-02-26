@@ -1,43 +1,48 @@
-# Личный проект «Глейси»
+# Проект «Техномарт»
 
-* Студент: [Николай К](https://up.htmlacademy.ru/htmlcss/15/user/202794).
-* Наставник: `Алексей Злодеев`.
+* Вёрстка: [Николай Карастелев](https://github.com/bini1988).
+* Макет: [HTML Academy](https://htmlacademy.ru).
+* Спецификация: [Specification.md](https://github.com/bini1988/gllacy/blob/master/Specification.md).
 
----
+## Описание
+Проект «Глейси» был выполнен в рамках пройденного онлайн‑курса «Базовый HTML и CSS» от HTML Academy.
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitignore`, `Contributing.md`, `Readme.md`._
+* Используемые технологии: _HTML, CSS, БЭМ, JS.
+* Автоматизация: _Gulp_.
+* Фреймворки: _нет_
+* Препроцессоры: _LESS_
+* JS модули: _[всплывающие окна](https://github.com/bini1988/gllacy/blob/master/js/script.js)_.
 
----
+## Ссылки
 
-### Памятка
+<table>
+  <tr>
+  <th><a href="http://bini1988.github.io/gllacy/index.html">Главная страница 1200</a></th>
+  <th><a href="http://bini1988.github.io/gllacy/catalog.html">Страница каталог товаров 1200</a></th>
+  </tr>
+  <tr valign="top">
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23338925/f617bba2-fc27-11e6-8522-76e1d5d1fb25.jpg" target="_blank">
+        <img src="https://cloud.githubusercontent.com/assets/8654155/23338925/f617bba2-fc27-11e6-8522-76e1d5d1fb25.jpg" width="250" alt="Главная страница 1200">
+      </a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23338927/ff865b6c-fc27-11e6-8712-6f65891a1ef5.jpg" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23338927/ff865b6c-fc27-11e6-8712-6f65891a1ef5.jpg" width="250" alt="Страница каталог товаров 1200"></a>
+    </td>
+  </tr>
+  <tr>
+  <th><a href="http://bini1988.github.io/gllacy/index.html">Главная страница 900</a></th>
+  <th><a href="http://bini1988.github.io/gllacy/catalog.html">Страница каталог товаров 900</a></th>
+  </tr>
+  <tr valign="top">
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23338928/029cec44-fc28-11e6-9466-d669e6c03b75.jpg" target="_blank">
+        <img src="https://cloud.githubusercontent.com/assets/8654155/23338928/029cec44-fc28-11e6-9466-d669e6c03b75.jpg" width="250" alt="Главная страница 900">
+      </a>
+    </td>
+    <td>
+      <a href="https://cloud.githubusercontent.com/assets/8654155/23338929/0596337e-fc28-11e6-9f1c-90fefddcd918.jpg" target="_blank"><img src="https://cloud.githubusercontent.com/assets/8654155/23338929/0596337e-fc28-11e6-9f1c-90fefddcd918.jpg" width="250" alt="Страница каталог товаров 900"></a>
+    </td>
+  </tr>
+</table>
 
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/202794-gllacy) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391926/4aaa72b0-bdfc-11e5-9324-e0597e8e0084.jpg">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391927/4ad24f1a-bdfc-11e5-83e9-eb692950a6e5.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Нажмите кнопку с иконкой компьютера и стрелкой, чтобы клонировать репозиторий через программу [GitHub Desktop](https://desktop.github.com):
-
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391902/17d49924-bdfc-11e5-8864-05fbcbddbb90.jpg">
-
-Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github.svg"></a>
-
-Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Базовый HTML и CSS](https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
